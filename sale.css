@@ -1,0 +1,701 @@
+/*menu bar css window*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+body{
+	/*height: 10000px;*/
+}
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+/*__________________________*/
+#sale_header{
+	width: 100%;
+	height: 350px;
+	background-color: red;
+	float: left;
+}
+#sale_header img{
+	width: 100%;
+	height: 350px;
+}
+/*----------------end of menu bar window-------------------*/
+/*_________________________*/
+#about_sale_process{
+	margin-top: 60px;
+	width: 100%;
+	height: 350px;
+	background-color: #cecccc;
+	/*background-image: url(img/management_background.jpg);*/
+	float: left;
+}
+#about_sale_title{
+	width: 100%;
+	height: 70px;
+	/*background-color: yellow;*/
+	padding-top: 10px;
+}
+#about_sale_title h2{
+	font-size: 40px;
+	font-family: Britannic Bold;
+	margin-left: 3%;
+}
+#about_sale_title #about_sale_hr{
+	width: 200px;
+	height: 5px;
+	background-color: #0b3465;
+}
+#about_sale_detail{
+	width: 100%;
+	height: 270px;
+	/*background-color: orange;*/
+}
+#about_sale_detail p{
+	margin-left: 3%;
+	margin-right: 3%;
+	line-height: 30px;
+	font-family: Lucida Sans;
+}
+/*...................................*/
+#kmd_content1_sale{
+	width: 100%;
+	height: 550px;
+	margin-top: 40px;
+	/*background-color: green;*/
+	float: left;
+}
+#kmd_content1_img{
+	width: 50%;
+	height: 100%;
+	/*background-color: orange;*/
+	float: left;
+}
+#kmd_content1_img img{
+	width: 90%;
+	height: 80%;
+	margin-top: 10%;
+	margin-left: 5%;
+	border: 5px solid #0b3465;
+	box-shadow: 0px 0px 10px #000;
+}
+#kmd_content1_para{
+	width: 50%;
+	height: 100%;
+	/*background-color: yellow;*/
+	float: left;
+}
+#kmd_content1_para p{
+	line-height: 40px;
+	margin-left: 3%;
+	margin-right: 5%;
+	margin-top: 13%;
+	font-size: 26px;
+	/*background-color: green;*/
+	font-family: Bell MT;
+}
+/*............................................*/
+#sale_brand{
+	width: 100%;
+	height: auto;
+}
+#sale_brand img{
+	width: 100%;
+	height: auto;
+}
+#sale_brand_search{
+	width: 100%;
+	height: 600px;
+	background-color: #d6d4d4;
+	margin-bottom: 60px;
+}
+#sale_brand_search table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  /*border: 1px solid #ddd;*/
+}
+
+#sale_brand_search th, td {
+  text-align: center;
+  padding: 10px;
+  /*background-color: blue;*/
+}
+
+#sale_brand_search tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#sale_brand_search img{
+	width: 25px;
+	height: 25px;
+}
+/*...............................*/
+#product_sale{
+	width: 100%;
+	height: 320px;
+	/*background-color: brown;*/
+	float: left;
+	background-image: url(img/management_background.jpg);
+	background-attachment: fixed;
+	padding-top: 20px;
+}
+#product_sale_each{
+	width: 20%;
+	height: 80%;
+	float: left;
+	margin-left: 4%;
+	/*background-color: red;*/
+}
+#product_sale h1{
+	text-align: center;
+	margin-bottom: 15px;
+	font-family: Britannic Bold;
+}
+#product_sale_each img{
+	width: 100%;
+	height: auto;
+	margin-top: 12%;
+}
+#product_sale_each p{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Britannic Bold;
+}
+/*.................................*/
+#typeofsale{
+	width: 100%;
+	height: 650px;
+	/*background-color: brown;*/
+	float: left;
+	margin-top: 60px;
+}
+#typeofsale h1{
+	margin-top: 3%;
+	text-align: center;
+}
+#typeofsale_each{
+	transition: 1s;
+	width: 28%;
+	height: auto;
+	float: left;
+	box-shadow: 0px 0px 10px #000;
+	background-color: #0b3465;
+	border-radius: 20px;
+	margin-top: 3%;
+	margin-left: 4%;
+	text-align: center;
+	padding-bottom: 3%;
+	color: white;
+}
+#typeofsale_each:hover{
+	background-color: #1560b5;
+	transition: 1s;
+}
+#typeofsale_each img{
+	width: 100%;
+	height: 50%;
+}
+#typeofsale_each h2{
+	margin-top: 3%;
+	font-family: Lucida Sans;
+}
+#typeofsale_each p{
+	font-family: Lucida Sans;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 15px;
+	margin-top: 3%;
+	line-height: 30px;
+}
+/*.........................................*/
+#noofdept{
+	margin-top: 50px;
+	float: left;
+	width: 100%;
+	height: 200px;
+	/*background-color: yellow;*/
+	margin-bottom: 30px;
+}
+#noofdept_each{
+	transition: 0.5s;
+	width: 25%;
+	height: 100%;
+	float: left;
+	margin-left: 6%;
+	box-shadow: 0px 0px 10px #000;
+	background-color: #ddd9d9;
+	text-align: center;
+}
+#noofdept_each h1{
+	font-size: 60px;
+	margin-top: 18%;
+	margin-bottom: 5%;
+}
+#noofdept_each p{
+	font-size: 14px;
+	font-family: Lucida Sans;
+}
+#noofdept_each:hover{
+	box-shadow: 0px 0px 0px #000;
+	background-color: white;
+	transition: 0.5s;
+}
+
+
+
+/*_____________________________________________________________
+______________________________________________________________*/
+@media only screen and (max-width:800px) 
+{
+ /*menu bar css tablet........................................*/
+
+ 	#menubar{
+ 		/*background-color: red;*/
+ 	}
+   #sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+	/*end of menu bar tablet...............................*/
+	/*_______________________________*/
+	#sale_header{
+	width: 100%;
+	height: 300px;
+	background-color: red;
+	}
+	#sale_header img{
+		width: 100%;
+		height: 300px;
+	}
+	/*______________________________*/
+	#about_sale_detail p{
+		margin-left: 3%;
+		margin-right: 3%;
+		line-height: 27px;
+		font-family: Lucida Sans;
+		font-size: 15px;
+	}
+	#about_sale_title h2{
+		font-size: 38px;
+		margin-top: 10px;
+	}
+	#about_sale_title #about_sale_hr{
+		height: 3px;
+	}
+	#about_sale_detail p{
+		font-size: 14px;
+	}
+	/*...................................*/
+	#kmd_content1_sale{
+	width: 100%;
+	height: 700px;
+	margin-top: 40px;
+	/*background-color: green;*/
+	float: left;
+	}
+	#kmd_content1_img{
+		width: 100%;
+		height: 60%;
+		/*background-color: orange;*/
+		float: left;
+	}
+	#kmd_content1_img img{
+		width: 80%;
+		height: 90%;
+		margin-top: 2%;
+		margin-left: 10%;
+		border: 5px solid #0b3465;
+		box-shadow: 0px 0px 10px #000;
+	}
+	#kmd_content1_para{
+		width: 100%;
+		height: 40%;
+		/*background-color: yellow;*/
+		float: left;
+	}
+	#kmd_content1_para p{
+		line-height: 40px;
+		margin-left: 8%;
+		margin-right: 5%;
+		margin-top: 2%;
+		font-size: 22px;
+		/*background-color: green;*/
+		font-family: Bell MT;
+	}
+	/*..................................*/
+	#product_sale{
+	width: 100%;
+	height: 550px;
+	/*background-color: brown;*/
+	float: left;
+	background-image: url(img/management_background.jpg);
+	background-attachment: fixed;
+	padding-top: 20px;
+	}
+	#product_sale_each{
+		width: 40%;
+		height: 40%;
+		float: left;
+		margin-left: 7%;
+		/*background-color: red;*/
+	}
+	#product_sale h1{
+		text-align: center;
+		margin-bottom: 15px;
+		font-family: Britannic Bold;
+	}
+	#product_sale_each img{
+		width: 70%;
+		height: auto;
+		margin-top: 12%;
+		margin-left: 15%;
+	}
+	#product_sale_each p{
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		font-family: Britannic Bold;
+	}
+	/*..........................*/
+	#typeofsale{
+	width: 100%;
+	height: 1800px;
+	/*background-color: brown;*/
+	float: left;
+	margin-top: 60px;
+	}
+	#typeofsale h1{
+		margin-top: 1%;
+		text-align: center;
+	}
+	#typeofsale_each{
+		width: 60%;
+		height: 30%;
+		float: left;
+		box-shadow: 0px 0px 10px #000;
+		margin-top: 3%;
+		margin-left: 20%;
+		text-align: center;
+		padding-bottom: 2%;
+	}
+	#typeofsale_each img{
+		width: 80%;
+		height: auto;
+	}
+	#typeofsale_each h2{
+		margin-top: 3%;
+		font-family: Lucida Sans;
+	}
+	#typeofsale_each p{
+		font-family: Lucida Sans;
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 15px;
+		margin-top: 3%;
+		line-height: 30px;
+	}
+}
+/*----------------------------------------------------------------------*/
+/*_________________________________________________________*/
+/*______________________________________*/
+
+
+@media only screen and (max-width: 600px)
+{
+	#menubar{
+		/*background-color: green;*/
+	}
+	#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+	}
+	/*______________________________*/
+	#sale_header{
+	width: 100%;
+	height: 180px;
+	background-color: red;
+	}
+	#sale_header img{
+		width: 100%;
+		height: 180px;
+	}
+	/*___________________________*/
+	#about_sale_title{
+		height: auto;
+	}
+	#about_sale_title h2{
+		font-size: 30px;
+	}
+	#about_sale_detail{
+		height: 580px;
+	}
+	#about_sale_process{
+		height: auto;
+	}
+	#about_sale_detail p{
+		font-size: 14px;
+		line-height: 28px;
+		margin-top: 20px;
+	}
+	#kmd_content1_sale{
+	width: 100%;
+	height: 700px;
+	margin-top: 20px;
+	/*background-color: green;*/
+	float: left;
+	}
+	#kmd_content1_img{
+		width: 100%;
+		height: 50%;
+		/*background-color: orange;*/
+		float: left;
+	}
+	#kmd_content1_img img{
+		width: 80%;
+		height: 80%;
+		margin-top: 8%;
+		margin-left: 10%;
+		border: 5px solid #0b3465;
+		box-shadow: 0px 0px 10px #000;
+	}
+	#kmd_content1_para{
+		width: 100%;
+		height: 50%;
+		/*background-color: yellow;*/
+		float: left;
+	}
+	#kmd_content1_para p{
+		line-height: 28px;
+		margin-left: 8%;
+		margin-right: 5%;
+		margin-top: 0%;
+		font-size: 20px;
+		/*background-color: green;*/
+		font-family: Bell MT;
+	}
+	#sale_brand_search{
+	width: 100%;
+	height: 610px;
+	background-color: #d6d4d4;
+	}
+	/*............................*/
+	#product_sale{
+	width: 100%;
+	height: 1100px;
+	/*background-color: brown;*/
+	float: left;
+	background-image: url(img/management_background.jpg);
+	background-attachment: fixed;
+	padding-top: 10px;
+	background-size: cover;
+	background-position: center;
+	}
+	#product_sale_each{
+		width: 80%;
+		height: 23%;
+		float: left;
+		margin-left: 10%;
+		/*background-color: red;*/
+	}
+	#product_sale h1{
+		text-align: center;
+		margin-bottom: 15px;
+		font-family: Britannic Bold;
+		font-size: 25px;
+	}
+	#product_sale_each img{
+		width: 70%;
+		height: auto;
+		margin-top: 12%;
+		margin-left: 15%;
+	}
+	#product_sale_each p{
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: Britannic Bold;
+	}
+
+	#typeofsale{
+	width: 100%;
+	height: 1600px;
+	/*background-color: brown;*/
+	float: left;
+	margin-top: 60px;
+	}
+	#typeofsale h1{
+		margin-top: 1%;
+		text-align: center;
+		font-size: 26px;
+	}
+	#typeofsale_each{
+		width: 80%;
+		height: 30%;
+		float: left;
+		box-shadow: 0px 0px 10px #000;
+		margin-top: 5%;
+		margin-left: 10%;
+		text-align: center;
+		padding-bottom: 2%;
+	}
+	#typeofsale_each img{
+		width: 100%;
+		height: 50%;
+	}
+	#typeofsale_each h2{
+		margin-top: 3%;
+		font-family: Lucida Sans;
+		font-size: 20px;
+	}
+	#typeofsale_each p{
+		font-family: Lucida Sans;
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 14px;
+		margin-top: 3%;
+		line-height: 28px;
+	}
+	#noofdept{
+	/*background-color: red;*/
+	height: 600px;
+	margin-top: -20px;
+	}
+	#noofdept_each{
+		width: 80%;
+		height: 25%;
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+	#noofdept_each h1{
+		font-size: 40px;
+		margin-top: 5%;
+	}
+	#noofdept_each p{
+		font-size: 13px;
+	}
+}

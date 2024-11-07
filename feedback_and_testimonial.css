@@ -1,0 +1,1320 @@
+/*For Desktop View*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+
+/*Menu Start*/
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+/*Menu Finish*/
+
+/*alumini contact*/
+#alumini_register_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+}
+#application_form_background_size{
+	width:100%;
+	height:auto;
+}
+#hiring_div{
+	width:100%;
+	height:600px;
+	border:0px solid blue;
+	float:left;
+}
+#hiring_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#hiring_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:35px;
+	color:#000000;
+	text-shadow:0px 1px 0px #000000;
+	text-align:center;
+}
+#hiring_header2_div{
+	width:100%;
+	height:25px;
+	border:0px solid blue;
+	float:left;
+	margin-top:0px;
+}
+#hiring_header2{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:20px;
+	color:#20409a;
+	text-align:center;
+}
+#hiring_content_div{
+	width:100%;
+	height:360px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#hiring_column_div{
+	width:22%;
+	height:350px;
+	border:3px solid #20409a;
+	float:left;
+	margin-left:1.9%;
+}
+#hiring_column_div:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.7);
+}
+#hiring_column_div:hover #hiring_column_header{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #hiring_column_line{
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #sub_need{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_header_div{
+	width:100%;
+	height:25px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#hiring_column_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:19px;
+	color:#20409a;
+	margin-left:5%;
+}
+#hiring_column_line{
+	width:40%;
+	height:2px;
+	float:left;
+	background-color:#204098;
+	margin-left:5%;
+	margin-top:5px;
+}
+#hiring_column_para_div{
+	width:100%;
+	height:290px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#sub_need{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:14px;
+	color:#20409a;
+	margin-left:7%;
+	margin-bottom:8px;
+	margin-right:3px;
+}
+#app_form_link:link, #app_form_link:visited{
+	width:20%;
+	height:53px;
+	border:0px solid blue;
+	background-color:#20409a;
+	border-radius:30px;
+	float:left;
+	margin-left:40%;
+	margin-top:28px;
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:7px;
+}
+#app_form_link:hover, #app_form_link:active{
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-radius:0px;
+	color:#20409a;
+	transition:0.5s;
+}
+/*alumini contact*/
+
+/* Start Alumini Testimonial*/
+#alumini_testimonial_div{
+	width:100%;
+	height:500px;
+	border:0px solid blue;
+	float:left;
+	background-image:url(img/alumini_testimonial_background.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+}
+#alumini_testimonial_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#alumini_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:30px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 2px #000000;
+}
+/* Start */
+#alumni_feedback_div{
+	width:80%;
+	height:350px;
+	border:2px solid #20409a;
+	box-shadow:0px 0px 10px #000000;
+	float:left;
+	margin-top:40px;
+	background-color:#ffffff;
+	border-radius:10px;
+	margin-left:10%;
+}
+#customer_photo_div{
+	width:11%;
+	height:88px;
+	float:left;
+	border-radius:50%;
+	margin-left:44%;
+	margin-top:30px;
+}
+#photo_size{
+	width:100%;
+	height:88px;
+}
+#customer_name_div{
+	width:100%;
+	height:25px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#customer_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:20px;
+	color:#000000;
+	text-align:center;
+}
+#customer_role_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:2px;
+}
+#customer_role{
+	font-family:Lucida Sans Unicode;
+	font-weight:bold;
+	font-size:15px;
+	color:#20409a;
+	text-align:center;
+}
+#feedback_para{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#feedback{
+	font-family:sans-serif;
+	font-weight:bold;
+	color:rgba(0,0,0,0.6);
+	font-size:18px;
+	text-align:center;
+	line-height:1.4;
+}
+
+/* Finish */
+/* Finish Alumini Testimonial*/
+
+/* Start Others Testimonial */
+#others_testimonial_div{
+	width:100%;
+	height:550px;
+	border:0px solid blue;
+	float:left;
+}
+#others_testimonial_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#other_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:30px;
+	color:#000000;
+	text-align:center;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_content_div{
+	width:100%;
+	height:420px;
+	border:0px solid blue;
+	float:left;
+	margin-top:40px;
+}
+#other_testimonial_left_div{
+	width:50%;
+	height:420px;
+	border:0px solid blue;
+	float:left;
+}
+#other_testimonial_right_div{
+	width:49%;
+	height:420px;
+	border:0px solid blue;
+	float:left;
+}
+#other_testimonial_left_row{
+	width:95%;
+	height:120px;
+	border:0px solid red;
+	float:left;
+	margin-bottom:4%;
+	margin-left:4%;
+}
+#other_testimonial_left_row:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	border-radius:0px 30px 0px 0px;
+}
+#other_testimonial_left_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_left_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_left_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_right_row{
+	width:95%;
+	height:120px;
+	border:0px solid red;
+	float:left;
+	margin-bottom:4%;
+	margin-left:5%;
+}
+#other_testimonial_right_row:hover{
+	background-color:#20409a;
+	transition:0.5s;
+	border-radius:0px 30px 0px 0px;
+}
+#other_testimonial_right_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_right_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_right_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_photo_div{
+	width:25%;
+	height:120px;
+	border:0px solid #000000;
+	box-shadow:0px 0px 10px #000000;
+	float:left;
+}
+#other_testimonial_photo{
+	width:100%;
+	height:100%;
+}
+#other_testimonial_para_div{
+	width:74%;
+	height:120px;
+	border:0px solid green;
+	float:left;
+}
+#other_alumni_name{
+	font-family:Lucida Grande;	
+	font-weight:bold;
+	font-size:20px;
+	color:#000000;
+	margin-left:10px;
+	margin-top:5px;
+}
+#other_alumni_role{
+	font-family:Lucida Grande;
+	font-weight:bold;
+	font-style:italic;
+	font-size:16px;
+	color:#20409a;
+	margin-left:10px;
+	margin-top:2px;
+}
+#heart_div{
+	width:95%;
+	height:25px;
+	border:0px solid blue;
+	float:left;
+	margin-left:5px;
+}
+#heart_size{
+	width:7%;
+	height:25px;
+	margin-left:5px;
+}
+#other_testimonial_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:12px;
+	color:rgba(0,0,0,0.5);
+	margin-left:10px;
+}
+/* Finish Others Testmonial*/
+
+/*=======================================================================*/
+
+@media only screen and (max-width:800px){
+	/*For Tablet View*/
+	#sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+
+/*alumini contact*/
+#alumini_register_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+}
+#application_form_background_size{
+	width:100%;
+	height:auto;
+}
+#hiring_div{
+	width:100%;
+	height:1100px;
+	border:0px solid blue;
+	float:left;
+}
+#hiring_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#hiring_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:27px;
+	color:#000000;
+	text-shadow:0px 1px 0px #000000;
+	text-align:center;
+}
+#hiring_header2_div{
+	width:100%;
+	height:22px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#hiring_header2{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:17px;
+	color:#20409a;
+	text-align:center;
+}
+#hiring_content_div{
+	width:98%;
+	height:950px;
+	border:0px solid red;
+	float:left;
+	margin-top:0px;
+	margin-left:1%;
+}
+#hiring_column_div{
+	width:90%;
+	height:205px;
+	border:3px solid #20409a;
+	float:left;
+	margin-left:4%;
+	margin-top:25px;
+}
+#hiring_column_div:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.7);
+}
+#hiring_column_div:hover #hiring_column_header{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #hiring_column_line{
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #sub_need{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_header_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#hiring_column_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:18px;
+	color:#20409a;
+	margin-left:5%;
+}
+#hiring_column_line{
+	width:30%;
+	height:2px;
+	float:left;
+	background-color:#204098;
+	margin-left:5%;
+	margin-top:5px;
+}
+#hiring_column_para_div{
+	width:100%;
+	height:220px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#sub_need{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:15px;
+	color:#20409a;
+	margin-left:7%;
+	margin-bottom:8px;
+	margin-right:3px;
+}
+#app_form_link:link, #app_form_link:visited{
+	width:30%;
+	height:32px;
+	border:0px solid blue;
+	background-color:#20409a;
+	border-radius:20px;
+	float:left;
+	margin-left:32%;
+	margin-top:5px;
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:10px;
+}
+#app_form_link:hover, #app_form_link:active{
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-radius:0px;
+	color:#20409a;
+	transition:0.5s;
+}
+
+/* Alumni Testimonial */
+#alumini_testimonial_div{
+	width:100%;
+	height:500px;
+	border:0px solid blue;
+	float:left;
+	background-image:url(img/alumini_testimonial_background.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+}
+#alumini_testimonial_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#alumini_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:30px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 2px #000000;
+}
+
+/* Start */
+#alumni_feedback_div{
+	width:80%;
+	height:300px;
+	border:2px solid #20409a;
+	box-shadow:0px 0px 10px #000000;
+	float:left;
+	margin-top:60px;
+	background-color:#ffffff;
+	border-radius:10px;
+	margin-left:10%;
+}
+#feedback_para{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+
+}
+#feedback{
+	font-family:sans-serif;
+	font-weight:bold;
+	color:rgba(0,0,0,0.6);
+	font-size:15px;
+	text-align:center;
+	line-height:1.5;
+}
+#customer_photo_div{
+	width:15%;
+	height:73px;
+	float:left;
+	border-radius:50%;
+	margin-left:42%;
+	margin-top:30px;
+}
+#photo_size{
+	width:100%;
+	height:88px;
+}
+#customer_name_div{
+	width:100%;
+	height:23px;
+	border:0px solid blue;
+	float:left;
+	margin-top:25px;
+}
+#customer_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:18px;
+	color:#000000;
+	text-align:center;
+}
+#customer_role_div{
+	width:100%;
+	height:18px;
+	border:0px solid blue;
+	float:left;
+	margin-top:2px;
+}
+#customer_role{
+	font-family:Lucida Sans Unicode;
+	font-weight:bold;
+	font-size:13px;
+	color:#20409a;
+	text-align:center;
+}
+/* Finish */
+/* Finish Alumni Testimonial */
+
+/* Start Others Testimonial */
+#others_testimonial_div{
+	width:100%;
+	height:465px;
+	border:0px solid red;
+	float:left;
+}
+#others_testimonial_header_div{
+	width:100%;
+	height:26px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#other_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:25px;
+	color:#000000;
+	text-align:center;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_content_div{
+	width:100%;
+	height:380px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#other_testimonial_left_div{
+	width:50%;
+	height:380px;
+	border:0px solid blue;
+	float:left;
+}
+#other_testimonial_right_div{
+	width:49%;
+	height:380px;
+	border:0px solid blue;
+	float:left;
+}
+#other_testimonial_left_row{
+	width:95%;
+	height:107px;
+	border:0px solid red;
+	float:left;
+	margin-bottom:6%;
+	margin-left:4%;
+}
+#other_testimonial_left_row:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	border-radius:0px 20px 0px 0px;
+}
+#other_testimonial_left_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_left_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_left_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_right_row{
+	width:95%;
+	height:107px;
+	border:0px solid red;
+	float:left;
+	margin-bottom:6%;
+	margin-left:5%;
+}
+#other_testimonial_right_row:hover{
+	background-color:#20409a;
+	transition:0.5s;
+	border-radius:0px 20px 0px 0px;
+}
+#other_testimonial_right_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_right_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_right_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_photo_div{
+	width:25%;
+	height:100%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 5px #000000;
+	float:left;
+}
+#other_testimonial_photo{
+	width:100%;
+	height:100%;
+}
+#other_testimonial_para_div{
+	width:74%;
+	height:105px;
+	border:0px solid #20409a;
+	float:left;
+}
+#other_alumni_name{
+	font-family:Lucida Grande;	
+	font-weight:bold;
+	font-size:18px;
+	color:#000000;
+	margin-left:10px;
+	margin-top:3px;
+}
+#other_alumni_role{
+	font-family:Lucida Grande;
+	font-weight:bold;
+	font-style:italic;
+	font-size:14px;
+	color:#20409a;
+	margin-left:10px;
+	margin-top:2px;
+}
+#heart_div{
+	width:90%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-left:5px;
+}
+#heart_size{
+	width:8%;
+	height:20px;
+	margin-left:5px;
+}
+#other_testimonial_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:12px;
+	color:rgba(0,0,0,0.5);
+	margin-left:10px;
+}
+/* Finish Others Testmonial*/
+}
+
+/*=======================================================================*/
+
+@media only screen and (max-width: 600px)
+{
+	/*For Mobile View*/
+	#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+	}
+
+	/*alumini contact*/
+#alumini_register_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+}
+#application_form_background_size{
+	width:100%;
+	height:auto;
+}
+#hiring_div{
+	width:100%;
+	height:1320px;
+	border:0px solid blue;
+	float:left;
+}
+#hiring_header_div{
+	width:100%;
+	height:28px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#hiring_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:25px;
+	color:#000000;
+	text-shadow:0px 1px 0px #000000;
+	text-align:center;
+}
+#hiring_header2_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#hiring_header2{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:15px;
+	color:#20409a;
+	text-align:center;
+}
+#hiring_content_div{
+	width:98%;
+	height:1195px;
+	border:0px solid red;
+	float:left;
+	margin-top:0px;
+	margin-left:1%;
+}
+#hiring_column_div{
+	width:90%;
+	height:265px;
+	border:3px solid #20409a;
+	float:left;
+	margin-left:4%;
+	margin-top:25px;
+}
+#hiring_column_div:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.7);
+}
+#hiring_column_div:hover #hiring_column_header{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #hiring_column_line{
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_div:hover #sub_need{
+	color:#ffffff;
+	transition:0.3s;
+}
+#hiring_column_header_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#hiring_column_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:16px;
+	color:#20409a;
+	margin-left:5%;
+}
+#hiring_column_line{
+	width:40%;
+	height:2px;
+	float:left;
+	background-color:#204098;
+	margin-left:5%;
+	margin-top:5px;
+}
+#hiring_column_para_div{
+	width:100%;
+	height:220px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#sub_need{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:13px;
+	color:#20409a;
+	margin-left:7%;
+	margin-bottom:8px;
+	margin-right:3px;
+}
+#app_form_link:link, #app_form_link:visited{
+	width:40%;
+	height:39px;
+	border:0px solid blue;
+	background-color:#20409a;
+	border-radius:20px;
+	float:left;
+	margin-left:32%;
+	margin-top:5px;
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:3px;
+}
+#app_form_link:hover, #app_form_link:active{
+	background-color:#ffffff;
+	border:1px solid #000000;
+	border-radius:0px;
+	color:#20409a;
+	transition:0.5s;
+}
+
+
+/* Start Alumni Testimonial*/
+#alumini_testimonial_div{
+	width:100%;
+	height:450px;
+	border:0px solid blue;
+	float:left;
+	background-image:url(img/alumini_testimonial_background.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+}
+#alumini_testimonial_header_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#alumini_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 2px #000000;
+}
+/* Start */
+#alumni_feedback_div{
+	width:80%;
+	height:330px;
+	border:2px solid #20409a;
+	box-shadow:0px 0px 10px #000000;
+	float:left;
+	margin-top:30px;
+	background-color:#ffffff;
+	border-radius:10px;
+	margin-left:10%;
+}
+#feedback_para{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+}
+#feedback{
+	font-family:sans-serif;
+	font-weight:bold;
+	color:rgba(0,0,0,0.6);
+	font-size:13px;
+	text-align:center;
+	line-height:1.5;
+}
+#customer_photo_div{
+	width:28%;
+	height:65px;
+	float:left;
+	border-radius:50%;
+	margin-left:36%;
+	margin-top:25px;
+	border:0px solid blue;
+}
+#photo_size{
+	width:100%;
+	height:65px;
+}
+#customer_name_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:5px;
+
+}
+#customer_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:15px;
+	color:#000000;
+	text-align:center;
+}
+#customer_role_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:0px;
+}
+#customer_role{
+	font-family:Lucida Sans Unicode;
+	font-weight:bold;
+	font-size:13px;
+	color:#20409a;
+	text-align:center;
+}
+/* Finish */
+/* Finish Alumni Testimonial */
+
+/* Start Others Testimonial */
+#others_testimonial_div{
+	width:100%;
+	height:785px;
+	border:0px solid blue;
+	float:left;
+}
+#others_testimonial_header_div{
+	width:100%;
+	height:45px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#other_testimonial_header{
+	font-family:Stencil Std;
+	font-weight:bold;
+	font-size:20px;
+	color:#000000;
+	text-align:center;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_content_div{
+	width:100%;
+	height:665px;
+	border:0px solid red;
+	float:left;
+	margin-top:40px;
+}
+#other_testimonial_left_div{
+	width:100%;
+	height:330px;
+	border:0px solid red;
+	float:left;
+}
+#other_testimonial_right_div{
+	width:100%;
+	height:330px;
+	border:0px solid blue;
+	float:left;
+}
+#other_testimonial_left_row{
+	width:97%;
+	height:90px;
+	border:0px solid green;
+	float:left;
+	margin-bottom:7%;
+	margin-left:2%;
+}
+#other_testimonial_left_row:hover{
+	background-color:#20409a;
+	transition:0.3s;
+	border-radius:0px 0px 0px 0px;
+}
+#other_testimonial_left_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_left_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_left_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_right_row{
+	width:97%;
+	height:90px;
+	border:0px solid red;
+	float:left;
+	margin-bottom:7%;
+	margin-left:2%;
+}
+#other_testimonial_right_row:hover{
+	background-color:#20409a;
+	transition:0.5s;
+	border-radius:0px 0px 0px 0px;
+}
+#other_testimonial_right_row:hover #other_alumni_name{
+	transition:0.3s;
+	color:#ffffff;
+	text-shadow:0px 0px 1px #000000;
+}
+#other_testimonial_right_row:hover #other_alumni_role{
+	transition:0.3s;
+	color:#ffffff;
+}
+#other_testimonial_right_row:hover #other_testimonial_para{
+	transition:0.3s;
+	color:rgba(255,255,255,0.7);
+}
+#other_testimonial_photo_div{
+	width:26%;
+	height:90px;
+	border:0px solid #000000;
+	box-shadow:0px 0px 3px #000000;
+	float:left;
+}
+#other_testimonial_photo{
+	width:100%;
+	height:100%;
+}
+#other_testimonial_para_div{
+	width:74%;
+	height:120px;
+	border:0px solid green;
+	float:left;
+}
+#other_alumni_name{
+	font-family:Lucida Grande;	
+	font-weight:bold;
+	font-size:15px;
+	color:#000000;
+	margin-left:10px;
+	margin-top:0px;
+}
+#other_alumni_role{
+	font-family:Lucida Grande;
+	font-weight:bold;
+	font-style:italic;
+	font-size:14px;
+	color:#20409a;
+	margin-left:10px;
+	margin-top:1px;
+}
+#heart_div{
+	width:90%;
+	height:15px;
+	border:0px solid blue;
+	float:left;
+	margin-left:5px;
+	margin-bottom:2px;
+}
+#heart_size{
+	width:8%;
+	height:18px;
+	margin-left:5px;
+}
+#other_testimonial_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:10px;
+	color:rgba(0,0,0,0.5);
+	margin-left:10px;
+}
+/* Finish Others Testmonial*/
+}

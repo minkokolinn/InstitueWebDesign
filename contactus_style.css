@@ -1,0 +1,1058 @@
+/*menu bar css window*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+body{
+	/*height: 10000px;*/
+}
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+/*----------------end of menu bar window-------------------*/
+/*__________________________________________________*/
+#contactus_header{
+	width: 100%;
+	height: 300px;
+	background-image: url(img/contactus_header_img.png);
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 13%;
+	float: left;
+}
+#contactus_header_txt{
+	width: 80%;
+	height: auto;
+	/*background-color: green;*/
+	text-align: center;
+	margin-left: 10%;
+}
+#contactus_header_txt h2{
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-family: Britannic Bold;
+	color: white;
+}
+#contactus_header_txt p{
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-family: Britannic Bold;
+	color: #ccc7c7;
+}
+#contactus_header_txt input[type="text"]{
+	margin-bottom: 20px;
+	color: white;
+	width: 50%;
+	height: 35px;
+	padding-left: 20px;
+	border: 3px solid #0b3465;
+	border-radius: 10px;
+	background-color: transparent;
+	box-shadow: 0px 0px 30px #000;
+	margin-right: 2%;
+
+}
+#contactus_header_txt input[type="submit"]{
+	transition: 1s;
+	width: 13%;
+	height: 40px;
+	background-color: #0b3465;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	border:3px solid #0b3465;
+	box-shadow: 0px 0px 10px black;
+
+}
+#contactus_header_txt input[type="submit"]:hover{
+	background-color: transparent;
+	transition: 0.5s;
+}
+/*________________________________________*/
+#kmd_branches{
+	float: left;
+	width: 100%;
+	height: 600px;
+	/*background-color: yellow;*/
+	margin-top: 70px;
+}
+#kmd_branches h1{
+	width: 100%;
+	height: 65px;
+	background-color: #0b3465;
+	text-align: center;
+	padding-top: 2%;
+	color: #ccc7c7;
+	font-family: Arial Black;
+}
+#kmd_each_branch{
+	transition: 0.2s;
+	width: 18%;
+	height: 200px;
+	background-color: white;
+	box-shadow: 0px 0px 3px #000;
+	float: left;
+	margin-left: 1.5%;
+	margin-top: 3%;
+	text-align: center;
+}
+#kmd_each_branch:hover{
+	transition: 0.2s;
+	background-color: #0b3465;
+	box-shadow: 0px 0px 20px #000;
+	/*font-size: 18px;*/
+	color: white;
+}
+#kmd_each_branch_h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#kmd_each_branch_h3 h3{
+	font-size: 16px;
+}
+#kmd_each_branch_phone{
+	margin-bottom: 10px;
+}
+#kmd_each_branch_address p{
+	font-size: 14px;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+/*______________________________________________*/
+#contact_form{
+	margin-top: 40px;
+	float: left;
+	width: 100%;
+	height: 640px;
+	background-image: url(img/group_of_companies.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#contact_form_left{
+	width: 50%;
+	height: 100%;
+	/*background-color: red;*/
+	float: left;
+}
+#contact_form_right{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#contact_form_right img{
+	width: 78%;
+	height: auto;
+	margin-left: 12%;
+	margin-top: 20px; 
+}
+#contact_form_right_txt{
+	width: 75%;
+	margin-left: 10%;
+	background-color: white;
+	box-shadow: 0px 0px 30px #000;
+	border-radius: 20px;
+	padding: 2%;
+	text-align: center;
+	margin-top: 3%;
+}
+#contact_form_right_txt p{
+	font-family: Buxton Sketch;
+	font-size: 18px;
+}
+#contact_form_left h1{
+	text-align: center;
+	margin-top: 5%;
+	font-family: Buxton Sketch;
+	text-shadow: 0px 0px 10px #000;
+	color: white;
+}
+#contact_form_left_txt{
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	margin-top: 2%;
+	/*background-color: blue;*/
+}
+#contact_form_left_txt p{
+	color: white;
+	font-size: 24px;
+	font-family: Buxton Sketch;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#contact_form_left_txt input[type="text"]{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	font-family: Buxton Sketch;
+	font-size: 20px;
+	padding-left: 5%;
+	box-shadow: 0px 0px 20px #000;
+}
+#contact_form_left_txt textarea{
+	width: 100%;
+	height: 100px;
+	border-radius: 20px;
+	font-family: Buxton Sketch;
+	font-size: 20px;
+	padding-left: 5%;
+	box-shadow: 0px 0px 20px #000;
+}
+#contact_form_left_txt input[type="submit"],input[type="reset"]{
+	transition: 0.8s;
+	width: 45%;
+	margin-top: 10%;
+	height: 40px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 30px #000;
+	margin-right: 2%;
+	background-color: #0b3465;
+	color: white;
+	font-size: 24px;
+	font-family: Buxton Sketch;
+	border: 1px solid grey;
+}
+#contact_form_left_txt input[type="submit"]:hover,input[type="reset"]:hover{
+	background-color: #1560b5;
+	transition: 0.3s;
+}
+/*_______________________________________________*/
+#two_head_offices{
+	width: 100%;
+	height: 600px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-top: 80px;
+}
+#two_head_offices_title{
+	width: 100%;
+	height: 15%;
+	/*background-color: lightblue;*/
+	text-align: center;
+	padding-top: 2%;
+}
+#two_head_offices_title h1{
+	font-family: Britannic Bold;
+}
+#two_head_offices_left{
+	transition: 1s;
+	width: 40%;
+	height: 80%;
+	float: left;
+	margin-left: 7%;
+}
+#two_head_offices_left:hover{
+	transition: 1s;
+	background-color: #caccce;
+	box-shadow: 0px 0px 15px #000000;
+}
+#two_head_office_header{
+	width: 100%;
+	height: 8%;
+	/*background-color: red;*/
+	text-align: center;
+	padding-top: 5%;
+}
+#two_head_office_header h3{
+	font-family:Britannic Bold;
+	font-size: 24px;
+}
+#two_head_offices_img{
+	width: 100%;
+	height: 30%;
+}
+#two_head_offices_img img{
+	width: 28%;
+	height: auto;
+	margin-left: 37%;
+	margin-top: 2%;
+
+}
+#two_head_offices_txt{
+	width: 100%;
+	height: 50%;
+	/*background-color: blue;*/
+	padding-top: 0%;
+}
+#two_head_offices_txt h4{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 5%;
+	font-family: Lucida Sans;
+}
+#two_head_offices_txt p{
+	text-align: center;
+	margin: 5%;
+	line-height: 30px;
+}
+#one_contact{
+	margin-bottom: 5%;
+}
+#two_head_offices_txt img{
+	width: 5%;
+	height: auto;
+	margin-left: 10%;
+	margin-right: 3%;
+}
+#two_head_offices_txt span{
+	font-size: 14px;
+}
+#whykmd_home{
+	float: left;
+	width: 90%;
+	height: 400px;
+	background-image: url(img/whykmd.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgba(250,250,250);
+	text-align: center;
+	padding-top: 40px;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 40px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+#whykmd_home h3
+{
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-family: Bell Gothic Std Light;
+	font-style: italic;
+}
+#whykmd_home p{
+	line-height: 40px;
+	font-size: 20px;
+	font-family: Futura Bk BT;
+}
+/*______________________________*/
+#noofdept{
+	margin-top: 50px;
+	float: left;
+	width: 100%;
+	height: 200px;
+	/*background-color: yellow;*/
+	margin-bottom: 50px;
+}
+#noofdept_each{
+	transition: 0.5s;
+	width: 25%;
+	height: 100%;
+	float: left;
+	margin-left: 6%;
+	box-shadow: 0px 0px 10px #000;
+	background-color: #ddd9d9;
+	text-align: center;
+}
+#noofdept_each h1{
+	font-size: 60px;
+	margin-top: 18%;
+	margin-bottom: 5%;
+}
+#noofdept_each p{
+	font-size: 14px;
+	font-family: Lucida Sans;
+}
+#noofdept_each:hover{
+	box-shadow: 0px 0px 0px #000;
+	background-color: white;
+	transition: 0.5s;
+}
+
+/*__________________________________________________________________________*/
+@media only screen and (max-width:800px) {
+ /*menu bar css tablet........................................*/
+ 	#menubar{
+ 		/*background-color: red;*/
+ 	}
+   #sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+	/*end of menu bar tablet...............................*/
+	/*________________________________________*/
+	#contactus_header{
+	width: 100%;
+	height: 300px;
+	background-image: url(img/contactus_header_img.png);
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 13%;
+	float: left;
+}
+#contactus_header_txt{
+	width: 80%;
+	height: auto;
+	/*background-color: green;*/
+	text-align: center;
+	margin-left: 10%;
+}
+#contactus_header_txt h2{
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-family: Britannic Bold;
+	color: white;
+}
+#contactus_header_txt p{
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-family: Britannic Bold;
+	color: #ccc7c7;
+}
+#contactus_header_txt input[type="text"]{
+	margin-bottom: 20px;
+	color: white;
+	width: 50%;
+	height: 30px;
+	padding-left: 20px;
+	border: 3px solid #0b3465;
+	border-radius: 10px;
+	background-color: transparent;
+	box-shadow: 0px 0px 20px #000;
+	margin-right: 2%;
+
+}
+#contactus_header_txt input[type="submit"]{
+	transition: 1s;
+	width: 13%;
+	height: 30px;
+	background-color: #0b3465;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	border:5px solid #0b3465;
+	box-shadow: 0px 0px 10px black;
+
+}
+#contactus_header_txt input[type="submit"]:hover{
+	background-color: transparent;
+	transition: 0.5s;
+}
+/*__________________________________________*/
+#kmd_branches{
+	float: left;
+	width: 100%;
+	height: 1000px;
+	/*background-color: yellow;*/
+	margin-top: 70px;
+}
+#kmd_branches h1{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	text-align: center;
+	padding-top: 2%;
+	color: #ccc7c7;
+	font-family: Arial Black;
+	font-size: 26px;
+}
+#kmd_each_branch{
+	transition: 0.2s;
+	width: 28%;
+	height: 200px;
+	background-color: white;
+	box-shadow: 0px 0px 3px #000;
+	float: left;
+	margin-left: 4%;
+	margin-top: 3%;
+	text-align: center;
+}
+#kmd_each_branch:hover{
+	transition: 0.2s;
+	background-color: #0b3465;
+	box-shadow: 0px 0px 20px #000;
+	/*font-size: 18px;*/
+	color: white;
+}
+#kmd_each_branch_h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#kmd_each_branch_h3 h3{
+	font-size: 18px;
+}
+#kmd_each_branch_phone{
+	margin-bottom: 10px;
+}
+#kmd_each_branch_address p{
+	font-size: 14px;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+/*____________________________________*/
+#contact_form_right_txt{
+	margin-top: 15%;
+}
+#contact_form_left h1{
+	font-size: 24px;
+}
+	
+
+/*----------------------------------------------------------------------*/
+#two_head_offices{
+	width: 100%;
+	height: 600px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-top: 80px;
+}
+#two_head_offices_title{
+	width: 100%;
+	height: 15%;
+	/*background-color: lightblue;*/
+	text-align: center;
+	padding-top: 2%;
+}
+#two_head_offices_title h1{
+	font-family: Britannic Bold;
+}
+#two_head_offices_left{
+	width: 40%;
+	height: 70%;
+	float: left;
+	margin-left: 7%;
+}
+#two_head_offices_left:hover{
+	transition: 1s;
+	background-color: #caccce;
+}
+#two_head_office_header{
+	width: 100%;
+	height: 8%;
+	/*background-color: red;*/
+	text-align: center;
+	padding-top: 5%;
+}
+#two_head_office_header h3{
+	font-size: 20px;
+}
+#two_head_offices_img{
+	width: 100%;
+	height: 30%;
+}
+#two_head_offices_img img{
+	width: 28%;
+	height: auto;
+	margin-left: 37%;
+	margin-top: 2%;
+
+}
+#two_head_offices_txt{
+	width: 100%;
+	height: 50%;
+	/*background-color: blue;*/
+	padding-top: 0%;
+}
+#two_head_offices_txt h4{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 5%;
+}
+#two_head_offices_txt p{
+	text-align: center;
+	margin: 5%;
+	line-height: 28px;
+	font-size: 14px;
+}
+#one_contact{
+	margin-bottom: 5%;
+}
+#two_head_offices_txt img{
+	width: 5%;
+	height: auto;
+	margin-left: 8%;
+	margin-right: 3%;
+}
+#two_head_offices_txt span{
+	font-size: 12px;
+}
+#whykmd_home{
+		height: 450px;
+		padding-top: 30px;
+		padding-left: 3%;
+		padding-right:3%;
+		width: 94%;
+		background-size: cover;
+		float: left;
+	}
+	#whykmd_home h3{
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	#whykmd_home p{
+		font-size: 18px;
+		line-height: 38px;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	#menubar{
+		/*background-color: green;*/
+	}
+	#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+	}
+	/*________________________________________________*/
+	#contactus_header{
+	width: 100%;
+	height: 200px;
+	background-image: url(img/contactus_header_img.png);
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+
+	/*___________________________________________*/
+	#contactus_header{
+	width: 100%;
+	height: 280px;
+	background-image: url(img/contactus_header_img.png);
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 13%;
+	float: left;
+}
+#contactus_header_txt{
+	width: 80%;
+	height: auto;
+	/*background-color: green;*/
+	text-align: center;
+	margin-left: 10%;
+}
+#contactus_header_txt h2{
+	margin-bottom: 20px;
+	font-size: 25px;
+	font-family: Britannic Bold;
+	color: white;
+}
+#contactus_header_txt p{
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: Britannic Bold;
+	color: #ccc7c7;
+}
+#contactus_header_txt input[type="text"]{
+	margin-bottom: 20px;
+	color: white;
+	width: 80%;
+	height: 35px;
+	padding-left: 20px;
+	border: 3px solid #0b3465;
+	border-radius: 10px;
+	background-color: transparent;
+	box-shadow: 0px 0px 30px #000;
+	margin-right: 2%;
+
+}
+#contactus_header_txt input[type="submit"]{
+	transition: 1s;
+	width: 50%;
+	height: 30px;
+	background-color: #0b3465;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 13px;
+	border:3px solid #0b3465;
+	box-shadow: 0px 0px 10px black;
+
+}
+#contactus_header_txt input[type="submit"]:hover{
+	background-color: transparent;
+	transition: 0.5s;
+
+}
+/*_____________________________________________*/
+#kmd_branches{
+	float: left;
+	width: 100%;
+	height: 1800px;
+	/*background-color: yellow;*/
+	margin-top: 70px;
+}
+#kmd_branches h1{
+	width: 100%;
+	height: 60px;
+	background-color: #0b3465;
+	text-align: center;
+	padding-top: 6%;
+	color: #ccc7c7;
+	font-size: 18px;
+	font-family: Arial Black;
+}
+#kmd_each_branch{
+	transition: 0.2s;
+	width: 80%;
+	height: 150px;
+	background-color: white;
+	box-shadow: 0px 0px 3px #000;
+	float: left;
+	margin-left: 10%;
+	margin-top: 3%;
+	text-align: center;
+}
+#kmd_each_branch:hover{
+	transition: 0.2s;
+	background-color: #0b3465;
+	box-shadow: 0px 0px 20px #000;
+	/*font-size: 18px;*/
+	color: white;
+}
+#kmd_each_branch_h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#kmd_each_branch_h3 h3{
+	font-size: 17px;
+}
+#kmd_each_branch_phone{
+	margin-bottom: 10px;
+}
+#kmd_each_branch_address p{
+	font-size: 13px;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+/*______________________________________*/
+#contact_form{
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+	height: 1000px;
+	background-image: url(img/group_of_companies.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#contact_form_left{
+	width: 100%;
+	height: 55%;
+	/*background-color: blue;*/
+	float: left;
+}
+#contact_form_right{
+	width: 100%;
+	height: 40%;
+	/*background-color: red;*/
+	/*margin-top: 20%;*/
+	float: left;
+}
+#contact_form_right img{
+	width: 50%;
+	height: auto;
+	margin-left: 25%;
+	/*background-color: red;*/
+}
+#contact_form_right_txt{
+	width: 75%;
+	margin-left: 10%;
+	background-color: white;
+	box-shadow: 0px 0px 30px #000;
+	border-radius: 20px;
+	padding: 2%;
+	text-align: center;
+	margin-top: 1%;
+}
+#contact_form_right_txt p{
+	font-family: Buxton Sketch;
+	font-size: 18px;
+}
+#contact_form_left h1{
+	text-align: center;
+	margin-top: 5%;
+	font-family: Buxton Sketch;
+	text-shadow: 0px 0px 10px #000;
+	color: white;
+}
+#contact_form_left_txt{
+	width: 70%;
+	height: auto;
+	margin-left: 10%;
+	margin-top: 2%;
+	/*background-color: blue;*/
+}
+#contact_form_left_txt p{
+	color: white;
+	font-size: 20px;
+	font-family: Buxton Sketch;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#contact_form_left_txt input[type="text"]{
+	width: 100%;
+	height: 28px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	font-family: Buxton Sketch;
+	font-size: 20px;
+	padding-left: 5%;
+	box-shadow: 0px 0px 20px #000;
+}
+#contact_form_left_txt textarea{
+	width: 100%;
+	height: 90px;
+	border-radius: 20px;
+	font-family: Buxton Sketch;
+	font-size: 20px;
+	padding-left: 5%;
+	box-shadow: 0px 0px 20px #000;
+}
+#contact_form_left_txt input[type="submit"],input[type="reset"]{
+	transition: 0.8s;
+	width: 45%;
+	margin-top: 7%;
+	height: 30px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 30px #000;
+	margin-right: 2%;
+	background-color: #0b3465;
+	color: white;
+	font-size: 20px;
+	font-family: Buxton Sketch;
+	border: 1px solid grey;
+}
+#contact_form_left_txt input[type="submit"]:hover,input[type="reset"]:hover{
+	background-color: #1560b5;
+	transition: 0.3s;
+}
+#two_head_offices{
+	width: 100%;
+	height: 1000px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-top: 80px;
+}
+#two_head_offices_title{
+	width: 100%;
+	height: 5%;
+	/*background-color: lightblue;*/
+	text-align: center;
+	padding-top: 10%;
+	font-size: 12px;
+}
+#two_head_offices_title h1{
+	font-family: Britannic Bold;
+}
+#two_head_offices_left{
+	width: 90%;
+	height: 420px;
+	float: left;
+	margin-left: 5%;
+	/*background-color: grey;*/
+	margin-top: 20px;
+}
+#two_head_offices_left:hover{
+	transition: 1s;
+	background-color: #caccce;
+}
+#two_head_office_header{
+	width: 100%;
+	height: 8%;
+	/*background-color: red;*/
+	text-align: center;
+	padding-top: 5%;
+}
+#two_head_office_header h3{
+	font-size: 20px;
+}
+#two_head_offices_img{
+	width: 100%;
+	height: 30%;
+}
+#two_head_offices_img img{
+	width: 26%;
+	height: 90px;
+	margin-left: 39%;
+	margin-top: 2%;
+
+}
+#two_head_offices_txt{
+	width: 100%;
+	height: 50%;
+	/*background-color: blue;*/
+	padding-top: 0%;
+}
+#two_head_offices_txt h4{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 5%;
+}
+#two_head_offices_txt p{
+	text-align: center;
+	margin: 5%;
+	line-height: 30px;
+}
+#one_contact{
+	margin-bottom: 5%;
+}
+#two_head_offices_txt img{
+	width: 5%;
+	height: auto;
+	margin-left: 10%;
+	margin-right: 3%;
+}
+#two_head_offices_txt span{
+	font-size: 12px;
+}
+#whykmd_home p{
+	line-height: 25px;
+}
+#noofdept{
+	/*background-color: red;*/
+	height: 600px;
+	margin-bottom: 0px;
+}
+#noofdept_each{
+	width: 80%;
+	height: 25%;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+#noofdept_each h1{
+	font-size: 40px;
+	margin-top: 5%;
+}
+#noofdept_each p{
+	font-size: 13px;
+}
+
+}

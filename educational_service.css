@@ -1,0 +1,1082 @@
+/*menu bar css window*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+body{
+	/*height: 10000px;*/
+}
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+#header_eduser{
+	width: 100%;
+	height: auto;
+}
+#header_eduser img{
+	width: 100%;
+	height: 100%;
+}
+#types_of_eduser_title{
+	width: 80%;
+	height: 60px;
+	text-align: center;
+	margin-top: 40px;
+	/*background-color: #0b3465;*/
+	/*border-radius: 40px;*/
+	margin-left: 10%;
+	/*box-shadow: 0px 0px 20px black;*/
+	padding-top: 2%;
+}
+#types_of_eduser_title h1{
+	color: #4f4d4d;
+	font-family: Lucida Sans;
+}
+#types_of_eduser{
+	width: 100%;
+	height: 280px;
+	/*background-color: brown;*/
+	margin-top: 20px;
+}
+#types_of_eduser_each{
+	width: 25%;
+	height: 100%;
+	background-color: green;
+	margin-left: 6%;
+	float: left;
+	text-align: center;
+	box-shadow: 0px 0px 3px #000;
+	border-radius: 20px;
+	transition: 0.5s;
+	color: white;
+}
+
+#types_of_eduser_each img{
+	margin-top: 5%;
+}
+#types_of_eduser_each h2{
+	margin-bottom: 5%;
+	font-family: Britannic Bold;
+}
+#types_of_eduser_each p{
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: Lucida Sans;
+}
+#types_of_eduser_each:hover{
+	box-shadow: 0px 0px 20px #000;
+	transition: 0.5s;
+}
+#oversea_content{
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/oversea_bg_img1.gif);
+	margin-top: 80px;
+	padding-top: 3%;
+}
+#oversea_content h1{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 20px #000;
+	font-family: Britannic Bold;
+	margin-bottom: 4%;
+}
+#oversea_content_each{
+	width: 80%;
+	height: 5%;
+	/*background-color: white;*/
+	margin-left: 10%;
+	margin-top: 3%;
+	text-align: center;
+}
+#oversea_content_each_title:hover{
+	transition: 0.5s;
+	background-color: #0b3465;
+	color: white;
+}
+#oversea_content_each_title:hover ~ #oversea_content_each_number{
+	transition: 0.5s;
+	background-color: #0b3465;
+	color: white;
+}
+#oversea_content_each_number:hover{
+	transition: 0.5s;
+	background-color: #0b3465;
+	color: white;
+}
+#oversea_content_each_number:hover ~ #oversea_content_each_title{
+	transition: 0.5s;
+	background-color: #0b3465;
+	color: white;
+}
+#oversea_content_each_number{
+	transition: 0.5s;
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	padding-top: 1%;
+	float: left;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px #000;
+}
+#oversea_content_each_title{
+	transition: 0.5s;
+	width: 77%;
+	height: 100%;
+	padding-top: 1%;
+	margin-left: 3%;
+	background-color: white;
+	float: left;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px #000;
+}
+#oversea_content_each_number h2{
+	font-family: Century Gothic;
+	font-weight: normal;
+}
+#oversea_content_each_title h2{
+	font-family: Century Gothic;
+	font-weight: normal;
+}
+/*........................................*/
+#oversea_content2{
+	width: 100%;
+	height: 350px;
+	/*background-color: brown;*/
+	margin-top: 60px;
+}
+#oversea_content2_left{
+	width: 55%;
+	height: 100%;
+	/*background-color: green;*/
+	float: left;
+}
+#oversea_content2_left h1{
+	margin-left: 4%;
+	margin-top: 7%;
+	font-size: 28px;
+	margin-bottom: 4%;
+	font-family: Century Gothic;
+}
+#oversea_content2_left p{
+	margin-left: 4%;
+	margin-right: 4%;
+	line-height: 30px;
+	font-size: 18px;
+	font-family: Century Gothic;
+}
+#oversea_content2_right{
+	width: 45%;
+	height: 100%;
+	/*background-color: yellow;*/
+	float: left;
+}
+#oversea_content2_right img{
+	width: 90%;
+	height: 80%;
+	margin-left: 5%;
+	margin-top: 10%;
+	border:2px solid black;
+}
+#ass_content{
+	width: 100%;
+	height: auto;
+	background-color: #444444;
+	margin-top: 60px;
+	float: left;
+	padding-bottom: 60px;
+}
+#ass_content h1{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	font-family: Century Gothic;
+	color: #2EA3F2;
+}
+#ass_content_first{
+	width: 40%;
+	height: auto;
+	/*background-color: brown;*/
+	float: left;
+	margin-left: 10%;
+}
+#ass_content_second{
+	width: 40%;
+	height: auto;
+	/*background-color: grey;*/
+	float: left;
+}
+#ass_content_first ul li{
+	margin-bottom: 5%;
+	color: white;
+	/*font-weight: bold;*/
+	font-family: Century Gothic;
+}
+#ass_content_second ul li{
+	margin-bottom: 5%;
+	color: white;
+	font-family: Century Gothic;
+}
+#ass_content_first ul li:hover{
+	color: #2EA3F2;
+	transition: 0.2s;
+}
+#ass_content_second ul li:hover{
+	color: #2EA3F2;
+	transition: 0.2s;
+}
+#online_exam_content{
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 8%;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url(img/online_exam_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#online_exam_content h1{
+	margin-top: 7%;
+	text-align: center;
+	color: #fff;
+}
+#online_exam_content p{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-top: 5%;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+}
+#online_exam_content2{
+	float: left;
+	width: 100%;
+	height: 315px;
+	background-color: #444444;
+}
+#online_exam_content2_each{
+	float: left;
+	width: 33%;
+	height: 100%;
+	/*background-color: green;*/
+	margin-left: 0.3%;
+	text-align: center;
+}
+#online_exam_content2_each:hover{
+	background-color: #0B3465;
+	transition: 0.5s;
+}
+#online_exam_content2_each img{
+	margin-top: 10%;
+}
+#online_exam_content2_each h2{
+	margin-top: 3%;
+	font-family: Century Gothic;
+	color: white;
+	font-size: 22px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#online_exam_content2_each p{
+	color: white;
+	margin-top: 5%;
+	line-height: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: Century Gothic;
+	font-size: 15px;
+}
+#training_content1{
+	/*background-color: #07136d;*/
+	/*float: left;*/
+	/*margin-left: 10%;*/
+}
+#training_content1 img{
+	width: 100%;
+	height: auto;
+}
+#training_content2{
+	width: 100%;
+	height: auto;
+	background-color: #07136d;
+	float: left;
+	padding-bottom: 7%;
+	margin-top: -5px;
+}
+#training_content2 h1{
+	text-align: center;
+	margin-top: 7%;
+	font-family: Century Gothic;
+	color: #2ea3f2;
+	font-size: 25px;
+}
+#training_content2 h2{
+	text-align: center;
+	font-family: Century Gothic;
+	margin-top: 3%;
+	color: #fff;
+	font-size: 23px;
+}
+#training_content2 input[type="submit"]{
+	width: 27%;
+	height: auto;
+	padding: 10px;
+	background-color: #f45911;
+	border:1px solid #f45911;
+	margin-left: 35%;
+	font-weight: bold;
+	color: white;
+	border-radius: 20px;
+	margin-top: 4%;
+	font-size: 20px;
+}
+
+
+
+/*----------------end of menu bar window-------------------*/
+
+@media only screen and (max-width:800px) {
+ /*menu bar css tablet........................................*/
+   #menubar{
+   	/*background-color: red;*/
+   }
+   #sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+	/*end of menu bar tablet...............................*/
+	#types_of_eduser_title{
+	width: 80%;
+	height: 60px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 10%;
+	padding-top: 2%;
+	}
+	#types_of_eduser_title h1{
+		color: #4f4d4d;
+		font-family: Lucida Sans;
+		font-size: 24px;
+	}
+/*.............................................*/
+	#types_of_eduser{
+	width: 100%;
+	height: 280px;
+	/*background-color: brown;*/
+	margin-top: 10px;
+	}
+	#types_of_eduser_each{
+	width: 31%;
+	height: 100%;
+	background-color: green;
+	margin-left: 2%;
+	float: left;
+	text-align: center;
+	box-shadow: 0px 0px 3px #000;
+	border-radius: 20px;
+	transition: 0.5s;
+	color: white;
+	}
+
+	#types_of_eduser_each img{
+	margin-top: 5%;
+	}
+	#types_of_eduser_each h2{
+	margin-bottom: 5%;
+	font-family: Britannic Bold;
+	font-size: 20px;
+	}
+	#types_of_eduser_each p{
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: Lucida Sans;
+	font-size: 14px;
+	}
+	#types_of_eduser_each:hover{
+	box-shadow: 0px 0px 20px #000;
+	transition: 0.5s;
+	}
+	/*............................*/
+	#oversea_content{
+	width: 100%;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/oversea_bg_img1.gif);
+	margin-top: 80px;
+	padding-top: 3%;
+	}
+	#oversea_content h1{
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 20px #000;
+		font-family: Britannic Bold;
+		margin-bottom: 4%;
+		font-size: 24px;
+	}
+	#oversea_content_each{
+		width: 80%;
+		height: 5%;
+		/*background-color: white;*/
+		margin-left: 10%;
+		margin-top: 3%;
+		text-align: center;
+	}
+	#oversea_content_each_title:hover{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_title:hover ~ #oversea_content_each_number{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number:hover{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number:hover ~ #oversea_content_each_title{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number{
+		transition: 0.5s;
+		width: 20%;
+		height: 100%;
+		background-color: white;
+		padding-top: 1%;
+		float: left;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px #000;
+	}
+	#oversea_content_each_number h2{
+		font-size: 18px;
+	}
+	#oversea_content_each_title{
+		transition: 0.5s;
+		width: 77%;
+		height: 100%;
+		padding-top: 1%;
+		margin-left: 3%;
+		background-color: white;
+		float: left;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px #000;
+	}
+	#oversea_content_each_title h2{
+		font-size: 18px;
+	}
+	/*-------------------------------*/
+	#oversea_content2{
+	width: 100%;
+	height: auto;
+	float: left;
+	/*background-color: brown;*/
+	margin-top: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	}
+	#oversea_content2_left{
+		width: 80%;
+		margin-left: 10%;
+		height: auto;
+		/*background-color: green;*/
+		float: left;
+		margin-bottom: 3%;
+	}
+	#oversea_content2_left h1{
+		margin-left: 4%;
+		margin-top: 3%;
+		font-size: 28px;
+		margin-bottom: 4%;
+		font-family: Century Gothic;
+	}
+	#oversea_content2_left p{
+		margin-left: 4%;
+		margin-right: 4%;
+		line-height: 30px;
+		font-size: 18px;
+		font-family: Century Gothic;
+	}
+	#oversea_content2_right{
+		width: 80%;
+		height: auto;
+		/*background-color: yellow;*/
+		float: left;
+		margin-left: 10%;
+	}
+	#oversea_content2_right img{
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-top: 1%;
+	}
+	#ass_content{
+	width: 100%;
+	height: auto;
+	background-color: #444444;
+	margin-top: 60px;
+	float: left;
+	padding-bottom: 60px;
+	}
+	#ass_content h1{
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 5%;
+		font-family: Century Gothic;
+		color: #2EA3F2;
+	}
+	#ass_content_first{
+		width: 80%;
+		height: auto;
+		/*background-color: brown;*/
+		float: left;
+		margin-left: 20%;
+	}
+	#ass_content_second{
+		width: 80%;
+		height: auto;
+		/*background-color: grey;*/
+		float: left;
+		margin-left: 20%;
+	}
+	#ass_content_first ul li{
+		margin-bottom: 2%;
+	}
+	#ass_content_second ul li{
+		margin-bottom: 2%;
+	}
+	#online_exam_content{
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 8%;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url(img/online_exam_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+	#online_exam_content h1{
+		margin-top: 7%;
+		text-align: center;
+		color: #fff;
+		font-size: 25px;
+	}
+	#online_exam_content p{
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-top: 5%;
+		line-height: 30px;
+		text-align: center;
+		color: white;
+	}
+	#online_exam_content2{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #444444;
+	}
+	#online_exam_content2_each{
+		float: left;
+		width: 100%;
+		height: auto;
+		margin-top: 0.3%;
+		margin-left: 0%;
+		/*background-color: green;*/
+		text-align: center;
+		padding-bottom: 8%;
+	}
+	#online_exam_content2_each img{
+		margin-top: 3%;
+	}
+	#online_exam_content2_each h2{
+		margin-top: 3%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 22px;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	#online_exam_content2_each p{
+		color: white;
+		margin-top: 5%;
+		line-height: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-family: Century Gothic;
+		font-size: 15px;
+	}
+	#training_content2{
+	width: 100%;
+	height: auto;
+	background-color: #07136d;
+	float: left;
+	padding-bottom: 7%;
+	}
+	#training_content2 h1{
+		text-align: center;
+		margin-top: 7%;
+		font-family: Century Gothic;
+		color: #2ea3f2;
+		font-size: 23px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#training_content2 h2{
+		text-align: center;
+		font-family: Century Gothic;
+		margin-top: 3%;
+		color: #fff;
+		font-size: 21px;
+	}
+	#training_content2 input[type="submit"]{
+		width: 30%;
+		height: auto;
+		padding: 7px;
+		background-color: #f45911;
+		border:1px solid #f45911;
+		margin-left: 35%;
+		font-weight: bold;
+		color: white;
+		border-radius: 20px;
+		margin-top: 4%;
+		font-size: 18px;
+	}
+}
+/*----------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 600px)
+{
+	#menubar{
+		/*background-color: green;*/
+	}
+	#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+	}
+	/*..................................*/
+	#types_of_eduser_title{
+	width: 80%;
+	height: 60px;
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 10%;
+	padding-top: 2%;
+	}
+	#types_of_eduser_title h1{
+		color: #4f4d4d;
+		font-family: Lucida Sans;
+		font-size: 18px;
+	}
+	/*.......................*/
+	#types_of_eduser{
+	width: 100%;
+	height: 750px;
+	/*background-color: brown;*/
+	margin-top: 10px;
+	}
+	#types_of_eduser_each{
+	width: 80%;
+	height: 30%;
+	background-color: green;
+	margin-left: 10%;
+	text-align: center;
+	box-shadow: 0px 0px 3px #000;
+	border-radius: 20px;
+	transition: 0.5s;
+	color: white;
+	margin-top: 4%;
+	}
+
+	#types_of_eduser_each img{
+	margin-top: 4%;
+	}
+	#types_of_eduser_each h2{
+	margin-bottom: 3%;
+	font-family: Britannic Bold;
+	}
+	#types_of_eduser_each p{
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: Lucida Sans;
+	font-size: 14px;
+	}
+	#types_of_eduser_each:hover{
+	box-shadow: 0px 0px 20px #000;
+	transition: 0.5s;
+	}
+	/*..........................*/
+	#oversea_content{
+	width: 100%;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/oversea_bg_img1.gif);
+	margin-top: 30px;
+	padding-top: 3%;
+	}
+	#oversea_content h1{
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 20px #000;
+		font-family: Britannic Bold;
+		margin-bottom: 4%;
+		font-size: 20px;
+	}
+	#oversea_content_each{
+		width: 80%;
+		height: 5%;
+		/*background-color: white;*/
+		margin-left: 10%;
+		margin-top: 3.5%;
+		text-align: center;
+		padding-top: 2%;
+	}
+	#oversea_content_each_title:hover{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_title:hover ~ #oversea_content_each_number{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number:hover{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number:hover ~ #oversea_content_each_title{
+		transition: 0.5s;
+		background-color: #0b3465;
+		color: white;
+	}
+	#oversea_content_each_number{
+		transition: 0.5s;
+		width: 20%;
+		height: 90%;
+		background-color: white;
+		padding-top: 5%;
+		float: left;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px #000;
+	}
+	#oversea_content_each_title{
+		transition: 0.5s;
+		width: 76%;
+		height: 90%;
+		padding-top: 5%;
+		margin-left: 3%;
+		background-color: white;
+		float: left;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px #000;
+	}
+	#oversea_content_each_title h2{
+		font-size: 13px;
+	}
+	#oversea_content2{
+	width: 100%;
+	height: auto;
+	float: left;
+	/*background-color: brown;*/
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	#oversea_content2_left{
+		width: 80%;
+		margin-left: 10%;
+		height: auto;
+		/*background-color: green;*/
+		float: left;
+		margin-bottom: 3%;
+	}
+	#oversea_content2_left h1{
+		margin-left: 4%;
+		margin-top: 3%;
+		font-size: 24px;
+		margin-bottom: 4%;
+		font-family: Century Gothic;
+	}
+	#oversea_content2_left p{
+		margin-left: 4%;
+		margin-right: 4%;
+		line-height: 25px;
+		font-size: 14px;
+		font-family: Century Gothic;
+	}
+	#oversea_content2_right{
+		width: 80%;
+		height: auto;
+		/*background-color: yellow;*/
+		float: left;
+		margin-left: 10%;
+	}
+	#oversea_content2_right img{
+		width: 100%;
+		height: auto;
+		margin-left: 0%;
+		margin-top: 1%;
+	}
+	#ass_content_first{
+		width: 80%;
+		margin-left: 10%;
+	}
+	#ass_content h1{
+		font-size: 23px;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	#ass_content_second{
+		width: 80%;
+		margin-left: 10%;
+	}
+	#ass_content_first ul li{
+		margin-bottom: 1.5%;
+		font-size: 14px;
+	}
+	#ass_content_second ul li{
+		margin-bottom: 1.5%;
+		font-size: 14px;
+	}
+	#online_exam_content{
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 10%;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url(img/online_exam_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+	#online_exam_content h1{
+		margin-top: 10%;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+	}
+	#online_exam_content p{
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-top: 5%;
+		line-height: 25px;
+		text-align: center;
+		font-size: 13px;
+		color: white;
+	}
+	#online_exam_content2{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #444444;
+	}
+	#online_exam_content2_each{
+		float: left;
+		width: 100%;
+		height: auto;
+		margin-top: 1%;
+		margin-left: 0%;
+		/*background-color: green;*/
+		text-align: center;
+		padding-bottom: 10%;
+	}
+	#online_exam_content2_each img{
+		margin-top: 10%;
+	}
+	#online_exam_content2_each h2{
+		margin-top: 5%;
+		font-family: Century Gothic;
+		color: white;
+		font-size: 20px;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	#online_exam_content2_each p{
+		color: white;
+		margin-top: 5%;
+		line-height: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-family: Century Gothic;
+		font-size: 13px;
+	}
+
+	#training_content2{
+	width: 100%;
+	height: auto;
+	background-color: #07136d;
+	float: left;
+	padding-bottom: 15%;
+	}
+	#training_content2 h1{
+		text-align: center;
+		margin-top: 15%;
+		font-family: Century Gothic;
+		color: #2ea3f2;
+		font-size: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#training_content2 h2{
+		text-align: center;
+		font-family: Century Gothic;
+		margin-top: 5%;
+		color: #fff;
+		font-size: 18px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#training_content2 input[type="submit"]{
+		width: 60%;
+		height: auto;
+		padding: 9px;
+		background-color: #f45911;
+		border:1px solid #f45911;
+		margin-left: 20%;
+		font-weight: bold;
+		color: white;
+		border-radius: 20px;
+		margin-top: 7%;
+		font-size: 14px;
+	}
+}

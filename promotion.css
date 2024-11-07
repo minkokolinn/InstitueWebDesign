@@ -1,0 +1,1796 @@
+/* For Desktop View*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+}
+
+/*------------ Start Menu-----------*/
+body{
+	/*height: 10000px;*/
+}
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height:50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+/*------------ Finish Menu-----------*/
+
+/*------------------------------- Start Promotion Header-----------------------*/
+#promotion_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+}
+#promotion_header_background_size{
+	width:100%;
+	height:auto;
+}
+
+/*------------------------------- Finish Promotion Header-----------------------*/
+
+/*------------------------------- Start Courses Promotion Content-----------------------*/
+#courses_promotion_content_div{
+	width:100%;
+	height:560px;
+	border:0px solid blue;
+	float:left;
+}
+#courses_promotion_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;	
+	margin-top:15px;
+}
+#courses_promotion_header{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:30px;
+	color:#000000;
+	text-align:center;
+}
+#courses_promotion_para_div{
+	width:100%;
+	height:480px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#courses_promotion_para_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#courses_promotion_header1_div{
+	width:20%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:5%;
+	background-color:#E55032;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#courses_promotion_header2_div{
+	width:20%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:3%;
+	background-color:#E55032;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#courses_promotion_detail1_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+
+}
+#courses_promotion_detail1_div:hover #cp_detail1_column1{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column2{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column3{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column4{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text3{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text4{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_LCCI{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_CCNA{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_CG{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_column_text{
+	color:#000000;
+}
+#cp_detail1_column1{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:20px 0px 0px 20px;
+	margin-left:5%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column2{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column3{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column4{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 20px 20px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#courses_promotion_header_text{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:8px;
+}
+
+#courses_promotion_header_text2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:8px;
+}
+#courses_promotion_detail_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text_LCCI{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text_CCNA{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text_CG{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text3{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text4{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_column_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+	font-style:italic;
+
+}
+/*------------------------------- Finish Courses Promotion Content-----------------------*/
+
+/*--------------------------------- Start Retail Promotion Content------------------------*/
+#retail_promotion_content_div{
+	width:100%;
+	height:600px;
+	border:0px solid blue;
+	float:left;
+	background-image:url(img/retail_promotion_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#retail_promotion_header_div{
+	width:100%;
+	height:42px;
+	border:0px solid red;
+	float:left;
+	margin-top:30px;
+}
+#retail_promotion_header{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:35px;
+	color:#ffffff;
+	text-align:center;
+}
+#retail_detail_div{
+	width:100%;
+	height:450px;
+	border:0px solid red;
+	float:left;
+	margin-top:30px;
+}
+#retail_column_div{
+	width:32%;
+	height:100%;
+	border:0px solid red;
+	float:left;
+	margin-left:0.8%;
+	background-color:#ffffff;
+	border-radius:30px;
+	box-shadow:6px 6px 10px rgba(0,0,0,0.4);
+}
+#retail_column_div:hover{
+	background-color:rgba(255,255,255,0.8);
+	border-radius:30px;
+	transition:0.3s;
+}
+#retail_column_div:hover #retail_discount_para{
+	font-size:22px;
+	transition:0.3s;
+}
+#retail_photo_div{
+	width:100%;
+	height:240px;
+	border:0px solid red;
+	float:left;
+}
+#retail_photo_size{
+	width:100%;
+	height:100%;
+}
+#retail_product_div{
+	width:100%;
+	height:205px;
+	border:0px solid red;
+	float:left;
+}
+#retail_product_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:20px;
+	color:#0b3465;
+	text-align:center;
+	margin-top:5px;
+}
+#retail_product_para{
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:13px;
+	color:#000000;
+	text-align:center;
+	margin-top:10px;
+	line-height:1.5;
+	margin-left:5px;
+	margin-right:5px;
+}
+#retail_discount_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:20px;
+	color:#A42130;
+	text-align:center;
+	margin-top:15px;
+}
+/*-------------------------------- Finish Retail Promotion Content------------------------*/
+
+/*-------------------------------- Start Latest New Content--------------------*/
+#latest_new_content{
+	width:100%;
+	height:550px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_new_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#latest_nwe_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:35px;
+	text-align:center;
+	text-align:center;
+}
+#latest_new_para_div{
+	width:100%;
+	height:400px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#latest_column_div{	
+	width:30%;
+	height:400px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:3%;
+	box-shadow:0px 0px 6px #000000;
+
+}
+#latest_column_div:hover{
+	border:2px solid #ffffff;	
+	transition:0.3s;
+}
+#latest_column_div2:hover{
+	border:2px solid #ffffff;	
+	transition:0.3s;
+}
+#latest_column_div:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div2:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div:hover #latest_news_title{
+	 color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div2:hover #latest_news_title{
+	 color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div2{
+	width:30%;
+	height:400px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:1.8%;
+	box-shadow:0px 0px 6px #000000;
+}
+#latest_photo_div{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_photo_div2{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_photo_div3{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news3.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_news_para_div{
+	width:100%;
+	height:198px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#latest_news_date_div{
+	width:15%;
+	height:40px;
+	background-color:#20409a;
+	float:left;
+	margin-top:160px;
+	margin-left:5%;
+	box-shadow:0px 0px 5px #000000;
+}
+#latest_news_date{
+	font-family:Lucida Bright;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#latest_news_month_div{
+	width:100%;
+	height:16px;
+	border:0px solid blue;
+	float:left;
+}
+#latest_news_month{
+	font-family:Rockwell;
+	font-weight:bold;
+	font-size:15px;
+	color:rgba(0,0,0,0.8);
+	margin-left:8%;
+}
+#latest_news_title_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#latest_news_title{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:18px;
+	color:#000000;
+	margin-left:7%;
+}
+#about_latest_news_div{
+	width:100%;
+	height:140px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#about_latest_news{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:16px;
+	color:rgba(0,0,0,0.7);
+	margin-left:7%;
+	margin-right:1%;
+	line-height:1.3;
+}
+/*-------------------------------- Finish Latest New Content------------------*/
+
+#want_to_hear_div{
+	width:100%;
+	height:150px;
+	background-color:#47D0C6;
+	float:left;
+}
+#want_to_hear_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#want_to_hear_header{
+	font-family:Bahnschrift;
+	font-weight:bold;
+	font-size:30px;
+	color:#0B3465;
+	margin-left:20px;
+}
+#contact_us_here_link:link, #contact_us_here_link:visited{
+	width:20%;
+	height:37px;
+	background-color:#0B3465;
+	float:left;
+	margin-left:20px;
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:13px;
+	margin-top:15px;
+	border-radius:5px;
+}
+#contact_us_here_link:hover, #contact_us_here_link:active{
+	background-color:#000000;
+	transition:0.5s;	
+	color:#47D0C6;
+}
+/*_______________________ Finish Contact Here ________________________*/
+
+
+@media only screen and (max-width:800px){
+	/* For Tablet View*/
+	*{
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+}
+
+/*------------ Start Menu-----------*/
+#sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+/*------------ Finish Menu-----------*/
+
+
+/*------------------------------- Start Promotion Header-----------------------*/
+#promotion_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+}
+#promotion_header_background_size{
+	width:100%;
+	height:auto;
+}
+/*------------------------------- Finish Promotion Header-----------------------*/
+
+/*------------------------------- Start Courses Promotion Content-----------------------*/
+#courses_promotion_content_div{
+	width:100%;
+	height:560px;
+	border:0px solid red;
+	float:left;
+}
+#courses_promotion_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;	
+	margin-top:15px;
+}
+#courses_promotion_header{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:30px;
+	color:#000000;
+	text-align:center;
+}
+#courses_promotion_para_div{
+	width:100%;
+	height:480px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#courses_promotion_para_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+#courses_promotion_header1_div{
+	width:20%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:5%;
+	background-color:#E55032;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#courses_promotion_header2_div{
+	width:20%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:3%;
+	background-color:#E55032;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#courses_promotion_detail1_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+
+}
+#courses_promotion_detail1_div:hover #cp_detail1_column1{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column2{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column3{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column4{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text3{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text4{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_LCCI{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_CCNA{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text_CG{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_column_text{
+	color:#000000;
+}
+#cp_detail1_column1{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:20px 0px 0px 20px;
+	margin-left:5%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column2{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column3{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column4{
+	width:20%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 20px 20px 0px;
+	margin-left:3%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#courses_promotion_header_text{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:8px;
+}
+
+#courses_promotion_header_text2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:8px;
+}
+#courses_promotion_detail_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+}
+#courses_promotion_detail_text_LCCI{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+}
+#courses_promotion_detail_text_CCNA{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text_CG{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+}
+#courses_promotion_detail_text3{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+}
+#courses_promotion_detail_text4{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+}
+#courses_promotion_column_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:11px;
+	font-style:italic;
+
+}
+/*------------------------------- Finish Courses Promotion Content-----------------------*/
+
+/*--------------------------------- Start Retail Promotion Content------------------------*/
+#retail_promotion_content_div{
+	width:100%;
+	height:1560px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/retail_promotion_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#retail_promotion_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid red;
+	float:left;
+	margin-top:15px;
+}
+#retail_promotion_header{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:30px;
+	color:#ffffff;
+	text-align:center;
+}
+#retail_detail_div{
+	width:100%;
+	height:1470px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#retail_column_div{
+	width:70%;
+	height:470px;
+	border:0px solid red;
+	float:left;
+	margin-left:15%;
+	background-color:#ffffff;
+	border-radius:30px;
+	margin-top:15px;
+	box-shadow:6px 6px 10px rgba(0,0,0,0.4);
+}
+#retail_column_div:hover{
+	background-color:rgba(255,255,255,0.8);
+	border-radius:30px;
+	transition:0.5s;
+}
+#retail_column_div:hover #retail_discount_para{
+	font-size:22px;
+	transition:0.5s;
+}
+#retail_photo_div{
+	width:70%;
+	height:250px;
+	border:0px solid red;
+	float:left;
+	margin-left:15%;
+}
+#retail_photo_size{
+	width:100%;
+	height:100%;
+}
+#retail_product_div{
+	width:70%;
+	height:210px;
+	border:0px solid red;
+	float:left;
+	margin-left:15%;
+}
+#retail_product_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:20px;
+	color:#0b3465;
+	text-align:center;
+	margin-top:10px;
+}
+#retail_product_para{
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:13px;
+	color:#000000;
+	text-align:center;
+	margin-top:10px;
+	line-height:1.5;
+	margin-left:5px;
+	margin-right:5px;
+}
+#retail_discount_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:19px;
+	color:#A42130;
+	text-align:center;
+	margin-top:10px;
+}
+/*-------------------------------- Finish Retail Promotion Content------------------------*/
+#latest_new_content{
+	width:100%;
+	height:550px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_new_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#latest_nwe_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:35px;
+	text-align:center;
+	text-align:center;
+}
+#latest_new_para_div{
+	width:100%;
+	height:400px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#latest_column_div{	
+	width:30%;
+	height:400px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:3%;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#latest_column_div2{
+	width:30%;
+	height:400px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:1.8%;
+	box-shadow:0px 0px 6px #000000;
+}
+#latest_column_div:hover{
+	border:2px solid #ffffff;	
+	transition:1s;
+}
+#latest_column_div2:hover{
+	border:2px solid #ffffff;	
+	transition:1s;
+}
+#latest_column_div:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div2:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div:hover #latest_news_title{
+	 color:#e64d43;
+	transition:1s;
+}
+#latest_column_div2:hover #latest_news_title{
+	 color:#e64d43;
+	transition:1s;
+}
+#latest_photo_div{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+#latest_photo_div2{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+#latest_photo_div3{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news3.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+#latest_news_para_div{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#latest_news_date_div{
+	width:15%;
+	height:40px;
+	background-color:#20409a;
+	float:left;
+	margin-top:160px;
+	margin-left:5%;
+	box-shadow:0px 0px 5px #000000;
+}
+#latest_news_date{
+	font-family:Lucida Bright;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#latest_news_month_div{
+	width:100%;
+	height:16px;
+	border:0px solid blue;
+	float:left;
+}
+#latest_news_month{
+	font-family:Rockwell;
+	font-weight:bold;
+	font-size:13px;
+	color:rgba(0,0,0,0.8);
+	margin-left:8%;
+}
+#latest_news_title_div{
+	width:100%;
+	height:18px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#latest_news_title{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:15px;
+	color:#000000;
+	margin-left:7%;
+}
+#about_latest_news_div{
+	width:100%;
+	height:140px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#about_latest_news{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	margin-left:7%;
+	margin-right:1%;
+	line-height:1.3;
+}
+/*----------------- Finish Latest News----------------------------*/
+
+#want_to_hear_div{
+	width:100%;
+	height:150px;
+	background-color:#47D0C6;
+	float:left;
+}
+#want_to_hear_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#want_to_hear_header{
+	font-family:Bahnschrift;
+	font-weight:bold;
+	font-size:30px;
+	color:#0B3465;
+	margin-left:20px;
+}
+#contact_us_here_link:link, #contact_us_here_link:visited{
+	width:27%;
+	height:35px;
+	background-color:#0B3465;
+	float:left;
+	margin-left:20px;
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:13px;
+	margin-top:15px;
+	border-radius:7px;
+}
+#contact_us_here_link:hover, #contact_us_here_link:active{
+	background-color:#000000;
+	transition:0.5s;	
+	color:#47D0C6;
+}
+/*_______________________ Finish Contact Here ________________________*/
+
+
+
+}
+
+@media only screen and (max-width: 600px){
+	*{
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+	}
+	/*------------ Start Menu-----------*/
+#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+}
+/*------------ Finish Menu-----------*/
+
+/*------------------------------- Start Promotion Header-----------------------*/
+#promotion_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+}
+#promotion_header_background_size{
+	width:100%;
+	height:auto;
+}
+/*------------------------------- Finish Promotion Header-----------------------*/
+
+
+#courses_promotion_content_div{
+	width:100%;
+	height:525px;
+	border:0px solid red;
+	float:left;
+}
+#courses_promotion_header_div{
+	width:100%;
+	height:22px;
+	border:0px solid blue;
+	float:left;	
+	margin-top:15px;
+}
+#courses_promotion_header{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#000000;
+	text-align:center;
+}
+#courses_promotion_para_div{
+	width:100%;
+	height:470px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#courses_promotion_para_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+	margin-bottom:3px;
+}
+#courses_promotion_header1_div{
+	width:22%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:2%;
+	background-color:#E55032;
+	box-shadow:0px 0px 2px #000000;
+
+}
+#courses_promotion_header2_div{
+	width:22%;
+	height:100%;
+	border:0px solid blue;
+	float:left;
+	margin-left:2.4%;
+	background-color:#E55032;
+	box-shadow:0px 0px 4px #000000;
+
+}
+#courses_promotion_detail1_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+
+}
+#courses_promotion_detail1_div:hover #cp_detail1_column1{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column2{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column3{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #cp_detail_column4{
+	border:1px solid rgba(0,0,0,0.5);
+	background-color:#ffffff;
+	transition:0.3s;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_detail_text{
+	color:#000000;
+}
+#courses_promotion_detail1_div:hover #courses_promotion_column_text{
+	color:#000000;
+}
+#cp_detail1_column1{
+	width:22%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:10px 0px 0px 10px;
+	margin-left:2%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column2{
+	width:22%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:2.4%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column3{
+	width:22%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 0px 0px 0px;
+	margin-left:2.4%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#cp_detail_column4{
+	width:22%;
+	height:100%;
+	background-color:#3CA390;
+	float:left;
+	border-radius:0px 10px 10px 0px;
+	margin-left:2.4%;
+	border:0px solid #000000;
+	box-shadow:0px 0px 4px #000000;
+}
+#courses_promotion_header_text{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:11px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#courses_promotion_header_text2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:11px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:13px;
+}
+#courses_promotion_detail_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:10px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text_LCCI{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:11px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#courses_promotion_detail_text_CCNA{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:11px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#courses_promotion_detail_text_CG{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:11px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:7px;
+}
+#courses_promotion_detail_text3{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:10px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:9px;
+}
+#courses_promotion_detail_text4{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:10px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:13px;
+}
+#courses_promotion_column_text{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:10px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:13px;
+	font-style:italic;
+
+}
+
+
+#retail_promotion_content_div{
+	width:100%;
+	height:1210px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/retail_promotion_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#retail_promotion_header_div{
+	width:100%;
+	height:32px;
+	border:0px solid red;
+	float:left;
+	margin-top:15px;
+}
+#retail_promotion_header{
+	font-family:Segoe UI;
+	font-weight:bold;
+	font-size:25px;
+	color:#ffffff;
+	text-align:center;
+}
+#retail_detail_div{
+	width:100%;
+	height:1140px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#retail_column_div{
+	width:96%;
+	height:360px;
+	border:0px solid red;
+	float:left;
+	margin-left:2%;
+	background-color:#ffffff;
+	border-radius:20px;
+	margin-top:15px;
+	box-shadow:6px 6px 10px rgba(0,0,0,0.4);
+}
+#retail_column_div:hover{
+	background-color:rgba(255,255,255,0.8);
+	border-radius:20px;
+	transition:0.3s;
+}
+#retail_column_div:hover #retail_discount_para{
+	font-size:19px;
+	transition:0.3s;
+}
+#retail_photo_div{
+	width:100%;
+	height:180px;
+	border:0px solid red;
+	float:left;
+	margin-left:0px;
+}
+#retail_photo_size{
+	width:100%;
+	height:100%;
+}
+#retail_product_div{
+	width:100%;
+	height:170px;
+	border:0px solid red;
+	float:left;
+	margin-left:0px;
+}
+#retail_product_name{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:18px;
+	color:#0b3465;
+	text-align:center;
+	margin-top:5px;
+}
+#retail_product_para{
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:11px;
+	color:#000000;
+	text-align:center;
+	margin-top:7px;
+	line-height:1.5;
+	margin-left:5px;
+	margin-right:5px;
+}
+#retail_discount_para{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:17px;
+	color:#A42130;
+	text-align:center;
+	margin-top:7px;
+}
+/*-------------------------------- Finish Retail Promotion Content------------------------*/
+/*-------------------------------- Start Latest New Content--------------------*/
+#latest_new_content{
+	width:100%;
+	height:1220px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news_background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#latest_new_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#latest_nwe_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	text-align:center;
+}
+#latest_new_para_div{
+	width:100%;
+	height:1140px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#latest_column_div{	
+	width:94%;
+	height:363px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:3%;
+	box-shadow:0px 0px 4px #000000;
+	margin-bottom:15px;
+}
+#latest_column_div2{
+	width:94%;
+	height:363px;
+	border:2px solid #ffffff;
+	float:left;
+	margin-left:3%;
+	box-shadow:0px 0px 4px #000000;
+	margin-bottom:15px;
+}
+#latest_column_div:hover{
+	border:2px solid #ffffff;	
+	transition:1s;
+}
+#latest_column_div2:hover{
+	border:2px solid #ffffff;	
+	transition:1s;
+}
+#latest_column_div:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div2:hover #latest_news_date_div{
+	background-color:#e64d43;
+	transition:0.3s;
+}
+#latest_column_div:hover #latest_news_title{
+	 color:#e64d43;
+	transition:1s;
+}
+#latest_column_div2:hover #latest_news_title{
+	 color:#e64d43;
+	transition:1s;
+}
+#latest_photo_div{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_photo_div2{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#latest_photo_div3{
+	width:100%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	background-image:url(img/latest_news3.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#latest_news_para_div{
+	width:100%;
+	height:162px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#latest_news_date_div{
+	width:15%;
+	height:40px;
+	background-color:#20409a;
+	float:left;
+	margin-top:160px;
+	margin-left:5%;
+	box-shadow:0px 0px 5px #000000;
+}
+#latest_news_date{
+	font-family:Lucida Bright;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:10px;
+}
+#latest_news_month_div{
+	width:100%;
+	height:16px;
+	border:0px solid blue;
+	float:left;
+}
+#latest_news_month{
+	font-family:Rockwell;
+	font-weight:bold;
+	font-size:13px;
+	color:rgba(0,0,0,0.8);
+	margin-left:8%;
+
+}
+#latest_news_title_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:6px;
+}
+#latest_news_title{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:16px;
+	color:#000000;
+	margin-left:7%;
+}
+#about_latest_news_div{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:6px;
+}
+#about_latest_news{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	margin-left:7%;
+	margin-right:1%;
+	line-height:1.3;
+}
+/*-------------------------------- Finish Latest New Content------------------*/
+
+
+#want_to_hear_div{
+	width:100%;
+	height:110px;
+	background-color:#47D0C6;
+	float:left;
+}
+#want_to_hear_header_div{
+	width:100%;
+	height:20px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#want_to_hear_header{
+	font-family:Bahnschrift;
+	font-weight:bold;
+	font-size:18px;
+	color:#0B3465;
+	margin-left:3%;
+}
+#contact_us_here_link:link, #contact_us_here_link:visited{
+	width:50%;
+	height:29px;
+	background-color:#0B3465;
+	float:left;
+	margin-left:3%;
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:13px;
+	margin-top:10px;
+	border-radius:5px;
+}
+#contact_us_here_link:hover, #contact_us_here_link:active{
+	background-color:#000000;
+	transition:0.5s;	
+	color:#47D0C6;
+}
+/*_______________________ Finish Contact Here ________________________*/
+}
+	
+

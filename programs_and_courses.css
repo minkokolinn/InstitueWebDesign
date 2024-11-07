@@ -1,0 +1,2513 @@
+/*------------- For Desktop View------------------*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+body{
+	/*height: 10000px;*/
+}
+#sidebar{
+	margin-top: 50px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #0b3465;
+	left: -300px;
+	transition: all 150ms linear;
+	/*opacity: 0.9;*/
+}
+#sidebar input[type="checkbox"]{
+	display: none;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li{
+	color: rgba(250,250,250,1);
+	list-style: none;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+}
+#sidebar ul li:hover{
+	transition: 400ms;
+	background-color: #0950a0;
+}
+#sidebar ul #dropdown li{
+	width: 100%;
+}
+#sidebar ul #dropdown li:hover{
+	background-color: #0b3465;
+	margin-left: -6%;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#sidebar #dropdown{
+	display: none;
+}
+#sidebar input:checked ~ #dropdown{
+	display: block;
+	margin-top: 10px;
+}
+#toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 4px;
+	left: 0px;
+}
+#toggle-btn.active{
+	/*left: 300px;*/
+}
+#toggle-btnb{
+	/*float: right;*/
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 300px;
+
+}
+#toggle-binb.active{
+	
+}
+#sidebar img{
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+#menubar{
+	width: 100%;
+	height: 50px;
+	background-color: #0b3465;
+	position: fixed;
+}
+#menubar #menu_btn{
+	float: left;
+	margin-left: 2%;
+}
+#menubar h3{
+	color: white;
+	border: 2px solid white;
+	margin-top: 4px;
+	width: 20%;
+	height: 28px;
+	margin-left: 40%;
+	padding-top: 7px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 17px;
+}
+#full_menu{
+	width: 100%;
+	height: 50px;
+	background-color: brown;
+	box-shadow: 1px 1px 15px #000000;
+}
+/*_______________________ End of the Menu Bar_____________________*/
+
+#pc_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+}
+#pc_header_photo_size{
+	width:100%;
+	height:auto;
+}
+/*_________________ Finish Header Content_____________________*/
+
+#pc_all_courses_header_div{
+	width:100%;
+	height:160px;
+	border:0px solid blue;
+	float:left;
+	background-color:#0B3465;
+	margin-top:-5px;
+}
+#pc_all_courses_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:35px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:55px;
+}
+/*______________________ Finish PC Header Content____________________*/
+
+#pc_all_courses_choice_div{
+	width:100%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	background-color:#2E3B4E;
+}
+#pc_all_courses_choice_column1{
+	width:28%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	margin-left:4.6%;
+}
+#pc_all_courses_choice_column2{
+	width:28%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	margin-left:3%;
+}
+#pc_all_courses_choice_column1:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+#pc_all_courses_choice_column2:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+
+#pc_all_courses_photo_div{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:25px;
+}
+#pc_all_courses_photo_size{	
+	width:30%;
+	height:80px;
+	margin-top:10px;
+	margin-left:35%;
+}
+#pc_all_courses_name_div{
+	width:100%;
+	height:22px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#pc_all_courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+}
+/*_______________________ Finish PC Choice Content____________________*/
+
+#educational_partners_content{
+	width:100%;
+	height:350px;
+	border:0px solid blue;
+	float:left;
+}
+#educational_partners_header_div{
+	width:100%;
+	height:45px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#educational_partners_header{
+	font-family:Bodoni MT;
+	font-weight:bold;
+	font-size:40px;
+	color:#000000;
+	text-align:center;
+}
+#educational_partners_para_div{
+	width:100%;
+	height:250px;
+	border:0px solid red;
+	float:left;
+	margin-top:15px;
+}
+#educational_partners_photo_div1{
+	width:15%;
+	height:90px;
+	border:0px solid blue;
+	float:left;
+	margin-left:10%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_div2{
+	width:15%;
+	height:90px;
+	border:0px solid blue;
+	float:left;
+	margin-left:6.5%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_size{
+	width:100%;
+	height:100%;
+}
+/*_____________________ Finish Educational Partners________________________________*/
+
+#award_content{
+	width:100%;
+	height:250px;
+	background-image:linear-gradient(to right, #0b3465, #2DB5DF);
+	float:left;
+
+}
+#award_header_div{
+	width:100%;
+	height:60px;
+	border:0px solid red;
+	float:left;
+	margin-top:20px;
+}
+#award_header{
+	font-family:Leelawadee UI;
+	font-weight:bold;
+	font-size:40px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 8px #000000;
+}
+#award_para_div{
+	width:100%;
+	height:30px;
+	border:0px solid red;
+	float:left;
+	margin-top:20px;
+}
+#award_para{
+	font-family:Microsoft YaHei;
+	font-weight:bold;
+	font-size:20px;
+	color:rgba(255,255,255,0.8);
+	text-align:center;
+	text-shadow:0px 0px 4px #000000;
+}
+#award_link:link, #award_link:visited{
+	width:18%;
+	height:37px;
+	background-color:#000000;
+	float:left;
+	border-radius:30px;
+	margin-top:20px;
+	margin-left:41%;
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:13px;
+}
+#award_link:hover, #award_link:active{
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.5);
+	transition:0.3s;
+}
+/*_________________________ Finish Awards Content_________________________*/
+
+#kmd_education_content{
+	width:100%;
+	height:700px;
+	border:0px solid blue;
+	float:left;
+}
+#kmd_education_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#kmd_education_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:35px;
+	color:#000000;
+	text-align:center;
+}
+#kmd_education_body_div{
+	width:100%;
+	height:550px;
+	border:0px solid blue;
+	float:left;
+	margin-top:30px;
+}
+#kmd_education_photo_div{
+	width:49%;
+	height:550px;
+	border:0px solid blue;
+	float:left;
+}
+#kmd_education_photo_size{
+	width:100%;
+	height:100%;
+}
+#kmd_education_para_div{
+	width:50%;
+	height:550px;
+	border:0px solid blue;
+	float:left;
+}
+
+#kmd_education_text_header{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:30px;
+	color:#0B3465;
+	margin-left:10px;
+	margin-top:40px;
+}
+#kmd_education_text_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:17px;
+	color:rgba(0,0,0,0.6);
+	margin-left:10px;
+	margin-top:10px;
+	line-height:1.5;
+}
+/*_________________ Finish KMD Education Content_________________*/
+
+
+#courses_div{
+	width:100%;
+	height:950px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#courses_header_div{
+	width:100%;
+	height:45px;
+	border:0px solid blue;
+	float:left;
+	margin-top:25px;
+}
+#courses_header{
+	font-family:Arial Rounded MT Bold;
+	font-weight:bold;
+	font-size:40px;
+	color:#000000;
+	text-align:center;
+}
+#courses_column1{
+	width:25%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:70px;
+	margin-left:7%;
+	border-radius:5px;
+	box-shadow:0px 0px 8px #000000;
+}
+#courses_column2{
+	width:25%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:70px;
+	margin-left:5%;
+	border-radius:5px;
+	box-shadow:0px 0px 7px #000000;
+}
+#courses_first_row_for1{
+	width:100%;
+	height:80px;
+	background-color:#057DAD;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for2{
+	width:100%;
+	height:80px;
+	background-color:#C8136E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for3{
+	width:100%;
+	height:80px;
+	background-color:#E9AA2E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for4{
+	width:100%;
+	height:80px;
+	background-color:#911317;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for5{
+	width:100%;
+	height:80px;
+	background-color:#3f4658;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for6{
+	width:100%;
+	height:80px;
+	background-color:#6E3C85;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for7{
+	width:100%;
+	height:80px;
+	background-color:#658b05;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for8{
+	width:100%;
+	height:80px;
+	background-color:#6e4c40;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_second_row{
+	width:100%;
+	height:118px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+	border-radius:0px 0px 5px 5px;
+}
+#courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:25px;
+}
+#courses_name_pse{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:18px;
+}
+#courses_second_para_div{
+	width:100%;
+	height:60px;
+	border:0px solid blue;
+	float:left;
+}
+#courses_second_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:5px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#courses_second_para2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#see_more_link1:link, #see_more_link1:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#057DAD;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link1:hover, #see_more_link1:active{
+	background-color:#025677;
+	transition:0.3s;
+}
+#see_more_link2:link, #see_more_link2:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#C8136E;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link2:hover, #see_more_link2:active{
+	background-color:#930d50;
+	transition:0.3s;
+}
+#see_more_link3:link, #see_more_link3:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#e9aa2e;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link3:hover, #see_more_link3:active{
+	background-color:#b27f20;
+	transition:0.3s;
+}
+#see_more_link4:link, #see_more_link4:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#911317;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link4:hover, #see_more_link4:active{
+	background-color:#660d0e;
+	transition:0.3s;
+}
+#see_more_link5:link, #see_more_link5:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#3f4658;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link5:hover, #see_more_link5:active{
+	background-color:#1e222b;
+	transition:0.3s;
+}
+#see_more_link6:link, #see_more_link6:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E3C85;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link6:hover, #see_more_link6:active{
+	background-color:#452654;
+	transition:0.3s;
+}
+#see_more_link7:link, #see_more_link7:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#658b05;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link7:hover, #see_more_link7:active{
+	background-color:#3d5403;
+	transition:0.3s;
+}
+
+#see_more_link8:link, #see_more_link8:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E4C40;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link8:hover, #see_more_link8:active{
+	background-color:#3d2923;
+	transition:0.3s;
+}
+/*____________________ Finish KMD Courses_______________________*/
+
+#footer{
+	width:100%;
+	height:450px;
+	border:0px solid green;
+	float:left;
+}
+#footer_top{
+	width:100%;
+	height:400px;
+	border:0px solid orange;
+	float:left;
+	background-color:#1b2230;
+}
+#footer_first_div{
+	width:23%;
+	height:330px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:5%;
+	margin-top:40px;
+}
+#footer_first_header{
+	width:43%;
+	height:50px;
+	float:left;
+	border:0px solid purple;
+	margin-left:6%;
+	
+	
+}
+#footer_header1{
+	color:#ffffff;
+	font-family:Helvetica;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#horizontal_footer{
+	width:40%;
+	height:1px;
+	float:left;
+	border:0px solid blue;
+	background-color:#e64d43;
+	margin-top:15px;
+}
+#footer_address{
+	width:88%;
+	height:60px;
+	float:left;
+	border:0px solid green;
+	margin-left:-44%;
+	margin-top:55px;
+}
+#footer_text_div{
+	width:90%;
+	height:265px;
+	float:left;
+	border:0px solid blue;
+	margin-top:10px;
+}
+#footer_text{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	margin-bottom:3px;
+}
+#footer_text_1{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:#e64d43;
+	margin-top:13px;
+	margin-bottom:3px;
+}
+#footer_second_div{
+	width:20%;
+	height:300px;
+	float:left;
+	border:0px solid blue;
+	margin-top:40px;
+	margin-left:10%;
+}
+#footer_for_pages{
+	width:80%;
+	height:250px;
+	float:left;
+	border:0px solid green;
+	margin-top:10px;
+	margin-left:7%;
+}
+#pages_link_footer:link,#pages_link_footer:visited{
+	text-decoration:none;
+	color:#E64D43;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:8px;
+}
+#pages_link_footer_1:link, #pages_link_footer_1:visited{
+	text-decoration:none;
+	color:#ffffff;
+	font-family:sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+#pages_link_footer_1:hover , #pages_link_footer1:active{
+	color:#E64D43;
+}
+#footer_pages_text{
+	margin-bottom:8px;
+}
+#footer_pages_text_1{
+	margin-bottom:8px;
+}
+#footer_third_div{
+	width:30%;
+	height:300px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:7%;
+	margin-top:40px;
+}
+#sign_up_div_footer{
+	width:65%;
+	height:30px;
+	float:left;
+	border:0px solid blue;
+	margin-top:65px;
+	margin-left:-44%;
+	
+}
+#sign_up_footer{
+	width:100%;
+	height:40px;
+	border-radius:5px;
+	border:0px solid #373B46;
+	padding-left:10px;
+	float:left;
+}
+#sign_up_bottom_footer:link, #sign_up_bottom_footer:visited{
+	width:25%;
+	height:33px;
+	float:right;
+	border-radius:5px;
+	margin-right:-30%;
+	background-color:#e64d43;
+	font-family:sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#ffffff;
+	margin-top:-1%;
+	padding-top:10px;
+	text-align:center;
+	text-decoration:none;
+}
+#sign_up_bottom_text:link,#sign_up_bottom_text:visited{
+	margin-top:7px;
+}
+#social_media_div_footer{
+	width:70%;
+	height:80px;
+	float:left;
+	border:0px solid green;
+	margin-top:30px;
+	margin-left:4%;
+}
+#social_media_photo_div:link, #social_media_photo_div:visited{
+	width:20%;
+	height:40px;
+	float:left;
+	border:0px solid blue;
+	background-color:#000000;
+	margin-left:2%;
+}
+#social_media_photo_div:hover, #social_media_photo_div:active{
+	background-color:#e64d43;
+}
+#social_media_image_size{
+	width:90%;
+	height:40px;
+	margin-left:4%;
+}
+#footer_bottom{
+	width:100%;
+	height:50px;
+	float:left;
+	border:0px solid blue;
+	background-color:#2d2e49;
+}
+#footer_for_text{
+	width:60%;
+	height:20px;
+	float:left;
+	border:0px solid blue;
+	margin-left:33%;
+	margin-top:16px;
+}
+#footer_text_copyright{
+	font-family:Helvetica;
+	font-size:17px;
+	color:#ffffff;
+}
+
+/*________________________Finish Footer__________________________________*/
+
+
+
+@media only screen and (max-width:800px) {
+	/*----------- For Tablet View----------------------*/
+	#sidebar{
+   		transition: 1s;
+		width: 250px;
+		height: 100%;
+		left: -250px;
+		transition: all 150ms linear;
+	}
+
+	#sidebar ul li{
+		transition: 1s;
+		color: rgba(250,250,250,1);
+		list-style: none;
+		padding: 10px 10px;
+		font-size: 16px;
+		/*border-bottom: 1px solid rgba(100,100,100,0.3);*/
+	}
+	#sidebar ul #dropdown li:hover{
+		transition: 1s;
+		background-color: #0b3465;
+		margin-left: -4.5%;
+	}
+	#menubar h3{
+		transition: 1s;
+		width: 30%;
+		padding-top: 8px;
+		font-size: 15px;
+		height: 30px;
+		margin-left: 38%;
+	}
+	/*______________________ End of the Menu Bar_________________________*/
+	#pc_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+	}
+	#pc_header_photo_size{
+		width:100%;
+		height:auto;
+	}
+	/*_________________ Finish Header Content_____________________*/
+#pc_all_courses_header_div{
+	width:100%;
+	height:160px;
+	border:0px solid blue;
+	float:left;
+	background-color:#0B3465;
+	margin-top:-5px;
+}
+#pc_all_courses_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:33px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:56px;
+}
+/*______________________ Finish PC Header Content____________________*/
+
+#pc_all_courses_choice_div{
+	width:100%;
+	height:201px;
+	border:0px solid blue;
+	float:left;
+	background-color:#2E3B4E;
+}
+#pc_all_courses_choice_column1{
+	width:28%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	margin-left:4.6%;
+}
+#pc_all_courses_choice_column2{
+	width:28%;
+	height:200px;
+	border:0px solid red;
+	float:left;
+	margin-left:3%;
+}
+#pc_all_courses_choice_column1:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+#pc_all_courses_choice_column2:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+
+#pc_all_courses_photo_div{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:35px;
+}
+#pc_all_courses_photo_size{	
+	width:40%;
+	height:80px;
+	margin-top:5px;
+	margin-left:30%;
+}
+#pc_all_courses_name_div{
+	width:100%;
+	height:22px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#pc_all_courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+}
+/*_______________________ Finish PC Choice Content____________________*/
+
+#educational_partners_content{
+	width:100%;
+	height:590px;
+	border:0px solid blue;
+	float:left;
+}
+#educational_partners_header_div{
+	width:100%;
+	height:45px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#educational_partners_header{
+	font-family:Bodoni MT;
+	font-weight:bold;
+	font-size:40px;
+	color:#000000;
+	text-align:center;
+}
+#educational_partners_para_div{
+	width:100%;
+	height:500px;
+	border:0px solid red;
+	float:left;
+	margin-top:15px;
+}
+#educational_partners_photo_div1{
+	width:35%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-left:10%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_div2{
+	width:35%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-left:10%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_size{
+	width:70%;
+	height:100%;
+	margin-left:15%;
+}
+/*_____________________ Finish Educational Partners________________________________*/
+
+#award_content{
+	width:100%;
+	height:240px;
+	background-image:linear-gradient(to right, #0b3465, #2DB5DF);
+	float:left;
+
+}
+#award_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid red;
+	float:left;
+	margin-top:20px;
+}
+#award_header{
+	font-family:Leelawadee UI;
+	font-weight:bold;
+	font-size:30px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 5px #000000;
+}
+#award_para_div{
+	width:100%;
+	height:50px;
+	border:0px solid red;
+	float:left;
+	margin-top:20px;
+}
+#award_para{
+	font-family:Microsoft YaHei;
+	font-weight:bold;
+	font-size:18px;
+	color:rgba(255,255,255,0.8);
+	text-align:center;
+	text-shadow:0px 0px 4px #000000;
+}
+#award_link:link, #award_link:visited{
+	width:20%;
+	height:34px;
+	background-color:#000000;
+	float:left;
+	border-radius:30px;
+	margin-top:20px;
+	margin-left:40%;
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:16px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:14px;
+}
+#award_link:hover, #award_link:active{
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.5);
+	transition:0.3s;
+}
+/*_________________________ Finish Awards Content_________________________*/
+
+#kmd_education_content{
+	width:100%;
+	height:1130px;
+	border:0px solid black;
+	float:left;
+}
+#kmd_education_header_div{
+	width:100%;
+	height:40px;
+	border:0px solid blue;
+	float:left;
+	margin-top:20px;
+}
+#kmd_education_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:35px;
+	color:#000000;
+	text-align:center;
+}
+#kmd_education_body_div{
+	width:100%;
+	height:1020px;
+	border:0px solid red;
+	float:left;
+	margin-top:30px;
+}
+#kmd_education_photo_div{
+	width:80%;
+	height:550px;
+	border:0px solid blue;
+	float:left;
+	margin-left:10%;
+}
+#kmd_education_photo_size{
+	width:100%;
+	height:100%;
+}
+#kmd_education_para_div{
+	width:80%;
+	height:460px;
+	border:0px solid blue;
+	float:left;
+	margin-left:10%;
+}
+
+#kmd_education_text_header{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:30px;
+	color:#0B3465;
+	margin-left:10px;
+	margin-top:40px;
+}
+#kmd_education_text_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:17px;
+	color:rgba(0,0,0,0.6);
+	margin-left:10px;
+	margin-top:10px;
+	line-height:1.5;
+}
+/*_________________ Finish KMD Education Content_________________*/
+
+#courses_div{
+	width:100%;
+	height:1200px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#courses_header_div{
+	width:100%;
+	height:45px;
+	border:0px solid blue;
+	float:left;
+	margin-top:25px;
+}
+#courses_header{
+	font-family:Arial Rounded MT Bold;
+	font-weight:bold;
+	font-size:40px;
+	color:#000000;
+	text-align:center;
+}
+#courses_column1{
+	width:40%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:70px;
+	margin-left:6.7%;
+	border-radius:5px;
+	box-shadow:0px 0px 8px #000000;
+}
+#courses_column2{
+	width:40%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:70px;
+	margin-left:6.7%;
+	border-radius:5px;
+	box-shadow:0px 0px 8px #000000;
+}
+#courses_first_row_for1{
+	width:100%;
+	height:80px;
+	background-color:#057DAD;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for2{
+	width:100%;
+	height:80px;
+	background-color:#C8136E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for3{
+	width:100%;
+	height:80px;
+	background-color:#E9AA2E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for4{
+	width:100%;
+	height:80px;
+	background-color:#911317;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for5{
+	width:100%;
+	height:80px;
+	background-color:#3f4658;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for6{
+	width:100%;
+	height:80px;
+	background-color:#6E3C85;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for7{
+	width:100%;
+	height:80px;
+	background-color:#658b05;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for8{
+	width:100%;
+	height:80px;
+	background-color:#6e4c40;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_second_row{
+	width:100%;
+	height:118px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+	border-radius:0px 0px 5px 5px;
+}
+#courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:25px;
+}
+#courses_name_pse{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:18px;
+}
+#courses_second_para_div{
+	width:100%;
+	height:60px;
+	border:0px solid blue;
+	float:left;
+}
+#courses_second_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:5px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#courses_second_para2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#see_more_link1:link, #see_more_link1:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#057DAD;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link1:hover, #see_more_link1:active{
+	background-color:#025677;
+	transition:0.3s;
+}
+#see_more_link2:link, #see_more_link2:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#C8136E;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link2:hover, #see_more_link2:active{
+	background-color:#930d50;
+	transition:0.3s;
+}
+#see_more_link3:link, #see_more_link3:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#e9aa2e;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link3:hover, #see_more_link3:active{
+	background-color:#b27f20;
+	transition:0.3s;
+}
+#see_more_link4:link, #see_more_link4:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#911317;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link4:hover, #see_more_link4:active{
+	background-color:#660d0e;
+	transition:0.3s;
+}
+#see_more_link5:link, #see_more_link5:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#3f4658;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link5:hover, #see_more_link5:active{
+	background-color:#1e222b;
+	transition:0.3s;
+}
+#see_more_link6:link, #see_more_link6:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E3C85;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link6:hover, #see_more_link6:active{
+	background-color:#452654;
+	transition:0.3s;
+}
+#see_more_link7:link, #see_more_link7:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#658b05;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link7:hover, #see_more_link7:active{
+	background-color:#3d5403;
+	transition:0.3s;
+}
+
+#see_more_link8:link, #see_more_link8:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E4C40;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link8:hover, #see_more_link8:active{
+	background-color:#3d2923;
+	transition:0.3s;
+}
+/*____________________ Finish KMD Courses_______________________*/
+
+	#footer{
+	width:100%;
+	height:520px;
+	border:0px solid green;
+	float:left;
+}
+#footer_top{
+	width:100%;
+	height:470px;
+	border:0px solid orange;
+	float:left;
+	background-color:#1b2230;
+}
+#footer_first_div{
+	width:25%;
+	height:330px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:5%;
+	margin-top:40px;
+}
+#footer_first_header{
+	width:43%;
+	height:50px;
+	float:left;
+	border:0px solid purple;
+	margin-left:6%;
+	
+	
+}
+#footer_header1{
+	color:#ffffff;
+	font-family:Helvetica;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#horizontal_footer{
+	width:40%;
+	height:1px;
+	float:left;
+	border:0px solid blue;
+	background-color:#e64d43;
+	margin-top:15px;
+}
+#footer_address{
+	width:88%;
+	height:60px;
+	float:left;
+	border:0px solid green;
+	margin-left:-44%;
+	margin-top:55px;
+}
+#footer_text_div{
+	width:90%;
+	height:265px;
+	float:left;
+	border:0px solid blue;
+	margin-top:10px;
+}
+#footer_text{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	margin-bottom:3px;
+}
+#footer_text_1{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:#e64d43;
+	margin-top:13px;
+	margin-bottom:3px;
+}
+#footer_second_div{
+	width:20%;
+	height:300px;
+	float:left;
+	border:0px solid blue;
+	margin-top:40px;
+	margin-left:9%;
+}
+#footer_for_pages{
+	width:80%;
+	height:250px;
+	float:left;
+	border:0px solid green;
+	margin-top:10px;
+	margin-left:7%;
+}
+#pages_link_footer:link,#pages_link_footer:visited{
+	text-decoration:none;
+	color:#E64D43;
+	font-family:sans-serif;
+	font-size:16px;
+}
+#pages_link_footer_1:link , #pages_link_footer_1:visited{
+	text-decoration:none;
+	color:#ffffff;
+	font-family:sans-serif;
+	font-size:16px;
+}
+#pages_link_footer_1:hover , #pages_link_footer_1:active{
+	color:#E64D43;
+}
+#footer_pages_text{
+	margin-bottom:8px;
+}
+#footer_pages_text_1{
+	margin-bottom:8px;
+}
+#footer_third_div{
+	width:30%;
+	height:300px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:9%;
+	margin-top:40px;
+}
+#sign_up_div_footer{
+	width:65%;
+	height:30px;
+	float:left;
+	border:0px solid blue;
+	margin-top:65px;
+	margin-left:-44%;
+	
+}
+#sign_up_footer{
+	width:100%;
+	height:40px;
+	border-radius:5px;
+	border:1px solid #373B46;
+	padding-left:10px;
+	float:left;
+}
+#sign_up_bottom_footer:link, #sign_up_bottom_footer:visited{
+	width:25%;
+	height:33px;
+	float:right;
+	border-radius:5px;
+	margin-right:-30%;
+	background-color:#E64D43;
+	font-family:sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#ffffff;
+	margin-top:-1%;
+	padding-top:10px;
+	text-align:center;
+	text-decoration:none;
+}
+#sign_up_bottom_text:link,#sign_up_bottom_text:visited{
+	margin-top:7px;
+}
+#social_media_div_footer{
+	width:70%;
+	height:80px;
+	float:left;
+	border:0px solid green;
+	margin-top:30px;
+	margin-left:4%;
+}
+#social_media_photo_div:link, #social_media_photo_div:visited{
+	width:28%;
+	height:40px;
+	float:left;
+	border:0px solid blue;
+	background-color:#000000;
+	margin-left:2%;
+}
+#social_media_photo_div:hover, #social_media_photo_div:active{
+	background-color:#E64D43;
+}
+#social_media_image_size{
+	width:90%;
+	height:40px;
+	margin-left:4%;
+}
+#footer_bottom{
+	width:100%;
+	height:50px;
+	float:left;
+	border:0px solid blue;
+	background-color:#2d2e49;
+}
+#footer_for_text{
+	width:60%;
+	height:20px;
+	float:left;
+	border:0px solid blue;
+	margin-left:26%;
+	margin-top:16px;
+}
+#footer_text_copyright{
+	font-family:Helvetica;
+	font-size:17px;
+	color:#ffffff;
+}
+	/*____________________________Finish Footer_______________________*/
+
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+	/*----------- For Mobile View--------------------*/
+
+	#menubar h3{
+		width: 40%;
+		font-size: 13px;
+		margin-left: 35%;
+	}
+	/*____________ End of the Menu Bar_____________________*/
+
+	#pc_header_div{
+	width:100%;
+	height:auto;
+	border:0px solid blue;
+	float:left;
+
+	}
+	#pc_header_photo_size{
+		width:100%;
+		height:auto;
+	}
+	/*_________________ Finish Header Content_____________________*/
+#pc_all_courses_header_div{
+	width:100%;
+	height:120px;
+	border:0px solid blue;
+	float:left;
+	background-color:#0B3465;
+	margin-top:-5px;
+}
+#pc_all_courses_header{
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	font-size:22px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:30px;
+}
+/*______________________ Finish PC Header Content____________________*/
+
+
+#pc_all_courses_choice_div{
+	width:100%;
+	height:600px;
+	border:0px solid blue;
+	float:left;
+	background-color:#2E3B4E;
+}
+#pc_all_courses_choice_column1{
+	width:96%;
+	height:185px;
+	border:0px solid red;
+	float:left;
+	margin-left:2%;
+	margin-top:10px;
+}
+#pc_all_courses_choice_column2{
+	width:96%;
+	height:185px;
+	border:0px solid red;
+	float:left;
+	margin-left:2%;
+	margin-top:10px;
+}
+#pc_all_courses_choice_column1:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+#pc_all_courses_choice_column2:hover{
+	background-color:#2DB5DF;
+	transition:0.5s;
+}
+
+#pc_all_courses_photo_div{
+	width:100%;
+	height:100px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#pc_all_courses_photo_size{	
+	width:30%;
+	height:80px;
+	margin-top:10px;
+	margin-left:35%;
+}
+#pc_all_courses_name_div{
+	width:100%;
+	height:22px;
+	border:0px solid blue;
+	float:left;
+	margin-top:10px;
+}
+#pc_all_courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+}
+/*_______________________ Finish PC Choice Content____________________*/
+
+#educational_partners_content{
+	width:100%;
+	height:880px;
+	border:0px solid blue;
+	float:left;
+}
+#educational_partners_header_div{
+	width:100%;
+	height:30px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#educational_partners_header{
+	font-family:Bodoni MT;
+	font-weight:bold;
+	font-size:25px;
+	color:#000000;
+	text-align:center;
+}
+#educational_partners_para_div{
+	width:100%;
+	height:800px;
+	border:0px solid red;
+	float:left;
+	margin-top:10px;
+}
+#educational_partners_photo_div1{
+	width:70%;
+	height:90px;
+	border:0px solid blue;
+	float:left;
+	margin-left:20%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_div2{
+	width:70%;
+	height:90px;
+	border:0px solid blue;
+	float:left;
+	margin-left:15%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#educational_partners_photo_size{
+	width:100%;
+	height:100%;
+	margin-left:0%;
+
+}
+/*_____________________ Finish Educational Partners________________________________*/
+
+#award_content{
+	width:100%;
+	height:220px;
+	background-image:linear-gradient(to right, #0b3465, #2DB5DF);
+	float:left;
+
+}
+#award_header_div{
+	width:100%;
+	height:60px;
+	border:0px solid red;
+	float:left;
+	margin-top:15px;
+}
+#award_header{
+	font-family:Leelawadee UI;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	text-shadow:0px 0px 4px #000000;
+	
+}
+#award_para_div{
+	width:100%;
+	height:55px;
+	border:0px solid red;
+	float:left;
+	margin-top:10px;
+}
+#award_para{
+	font-family:Microsoft YaHei;
+	font-weight:bold;
+	font-size:13px;
+	color:rgba(255,255,255,0.8);
+	text-align:center;
+	text-shadow:0px 0px 2px #000000;
+	margin-left:5px;
+	margin-right:5px;
+}
+#award_link:link, #award_link:visited{
+	width:40%;
+	height:30px;
+	background-color:#000000;
+	float:left;
+	border-radius:30px;
+	margin-top:15px;
+	margin-left:30%;
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:10px;
+}
+#award_link:hover, #award_link:active{
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.5);
+	transition:0.3s;
+}
+/*_________________________ Finish Awards Content_________________________*/
+
+#kmd_education_content{
+	width:100%;
+	height:1225px;
+	border:0px solid blue;
+	float:left;
+}
+#kmd_education_header_div{
+	width:100%;
+	height:65px;
+	border:0px solid blue;
+	float:left;
+	margin-top:15px;
+}
+#kmd_education_header{
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:28px;
+	color:#000000;
+	text-align:center;
+}
+#kmd_education_body_div{
+	width:100%;
+	height:1110px;
+	border:0px solid red;
+	float:left;
+	margin-top:20px;
+}
+#kmd_education_photo_div{
+	width:90%;
+	height:400px;
+	border:0px solid blue;
+	float:left;
+	margin-left:5%;
+}
+#kmd_education_photo_size{
+	width:100%;
+	height:100%;
+}
+#kmd_education_para_div{
+	width:90%;
+	height:700px;
+	border:0px solid blue;
+	float:left;
+	margin-left:5%;
+}
+
+#kmd_education_text_header{
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:23px;
+	color:#0B3465;
+	margin-left:10px;
+	margin-top:20px;
+	text-align:center;
+}
+#kmd_education_text_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:15px;
+	color:rgba(0,0,0,0.7);
+	margin-left:0px;
+	margin-top:15px;
+	line-height:1.5;
+	text-align:center;
+	margin-right:0px;
+}
+/*_________________ Finish KMD Education Content_________________*/
+
+#courses_div{
+	width:100%;
+	height:2060px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+}
+#courses_header_div{
+	width:100%;
+	height:67px;
+	border:0px solid blue;
+	float:left;
+	margin-top:25px;
+}
+#courses_header{
+	font-family:Arial Rounded MT Bold;
+	font-weight:bold;
+	font-size:30px;
+	color:#000000;
+	text-align:center;
+}
+#courses_column1{
+	width:90%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:40px;
+	margin-left:5%;
+	border-radius:5px;
+	box-shadow:0px 0px 8px #000000;
+}
+#courses_column2{
+	width:90%;
+	height:200px;
+	border:0px solid blue;
+	float:left;
+	margin-top:40px;
+	margin-left:5%;
+	border-radius:5px;
+	box-shadow:0px 0px 7px #000000;
+}
+#courses_first_row_for1{
+	width:100%;
+	height:80px;
+	background-color:#057DAD;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for2{
+	width:100%;
+	height:80px;
+	background-color:#C8136E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for3{
+	width:100%;
+	height:80px;
+	background-color:#E9AA2E;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for4{
+	width:100%;
+	height:80px;
+	background-color:#911317;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for5{
+	width:100%;
+	height:80px;
+	background-color:#3f4658;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for6{
+	width:100%;
+	height:80px;
+	background-color:#6E3C85;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for7{
+	width:100%;
+	height:80px;
+	background-color:#658b05;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_first_row_for8{
+	width:100%;
+	height:80px;
+	background-color:#6e4c40;
+	float:left;
+	border-radius:5px 5px 0px 0px;
+}
+#courses_second_row{
+	width:100%;
+	height:118px;
+	border:0px solid red;
+	float:left;
+	background-color:#ffffff;
+	border-radius:0px 0px 5px 5px;
+}
+#courses_name{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:25px;
+}
+#courses_name_pse{
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:20px;
+	color:#ffffff;
+	text-align:center;
+	margin-top:18px;
+}
+#courses_second_para_div{
+	width:100%;
+	height:60px;
+	border:0px solid blue;
+	float:left;
+}
+#courses_second_para{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:5px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#courses_second_para2{
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:14px;
+	color:rgba(0,0,0,0.7);
+	text-align:center;
+	margin-top:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#see_more_link1:link, #see_more_link1:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#057DAD;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link1:hover, #see_more_link1:active{
+	background-color:#025677;
+	transition:0.3s;
+}
+#see_more_link2:link, #see_more_link2:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#C8136E;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link2:hover, #see_more_link2:active{
+	background-color:#930d50;
+	transition:0.3s;
+}
+#see_more_link3:link, #see_more_link3:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#e9aa2e;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link3:hover, #see_more_link3:active{
+	background-color:#b27f20;
+	transition:0.3s;
+}
+#see_more_link4:link, #see_more_link4:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#911317;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link4:hover, #see_more_link4:active{
+	background-color:#660d0e;
+	transition:0.3s;
+}
+#see_more_link5:link, #see_more_link5:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#3f4658;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link5:hover, #see_more_link5:active{
+	background-color:#1e222b;
+	transition:0.3s;
+}
+#see_more_link6:link, #see_more_link6:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E3C85;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link6:hover, #see_more_link6:active{
+	background-color:#452654;
+	transition:0.3s;
+}
+#see_more_link7:link, #see_more_link7:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#658b05;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link7:hover, #see_more_link7:active{
+	background-color:#3d5403;
+	transition:0.3s;
+}
+
+#see_more_link8:link, #see_more_link8:visited{
+	width:40%;
+	height:25px;
+	border:0px solid blue;
+	background-color:#6E4C40;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+	font-family:Lucida Sans;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	text-align:center;
+	text-decoration:none;
+	padding-top:5px;
+}
+#see_more_link8:hover, #see_more_link8:active{
+	background-color:#3d2923;
+	transition:0.3s;
+}
+/*____________________ Finish KMD Courses_______________________*/
+
+#footer{
+	width:100%;
+	/*height:900px;*/
+	border:0px solid green;
+	float:left;
+}
+#footer_top{
+	width:100%;
+	height:760px;
+	border:0px solid orange;
+	float:left;
+	background-color:#1b2230;
+}
+#footer_first_div{
+	width:100%;
+	height:280px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:0%;
+	margin-top:40px;
+}
+#footer_first_header{
+	width:43%;
+	height:50px;
+	float:left;
+	border:0px solid purple;
+	margin-left:6%;
+}
+#footer_header1{
+	color:#ffffff;
+	font-family:Helvetica;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#horizontal_footer{
+	width:40%;
+	height:1px;
+	float:left;
+	border:0px solid blue;
+	background-color:#E64D43;
+	margin-top:15px;
+}
+#footer_address{
+	width:88%;
+	height:60px;
+	float:left;
+	border:0px solid green;
+	margin-left:-44%;
+	margin-top:55px;
+}
+#footer_text_div{
+	width:90%;
+	height:265px;
+	float:left;
+	border:0px solid blue;
+	margin-top:10px;
+}
+#footer_text{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	margin-bottom:3px;
+}
+#footer_text_1{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:#E64D43;
+	margin-top:13px;
+	margin-bottom:3px;
+}
+#footer_second_div{
+	width:100%;
+	height:220px;
+	float:left;
+	border:0px solid blue;
+	margin-top:20px;
+	margin-left:0%;
+}
+#footer_for_pages{
+	width:80%;
+	height:250px;
+	float:left;
+	border:0px solid green;
+	margin-top:10px;
+	margin-left:7%;
+}
+#pages_link_footer:link,#pages_link_footer:visited{
+	text-decoration:none;
+	color:#E64D43;
+	font-family:sans-serif;
+	font-size:16px;
+}
+#pages_link_footer_1:link , #pages_link_footer_1:visited{
+	text-decoration:none;
+	color:#ffffff;
+	font-family:sans-serif;
+	font-size:16px;
+}
+#pages_link_footer_1:hover , #pages_link_footer_1:active{
+	color:#E64D43;
+}
+#footer_pages_text{
+	margin-bottom:8px;
+}
+#footer_pages_text_1{
+	margin-bottom:8px;
+}
+#footer_third_div{
+	width:100%;
+	height:180px;
+	float:left;
+	border:0px solid yellow;
+	margin-left:0%;
+	margin-top:1px;
+}
+#sign_up_div_footer{
+	width:55%;
+	height:30px;
+	float:left;
+	border:0px solid blue;
+	margin-top:65px;
+	margin-left:-44%;
+	
+}
+#sign_up_footer{
+	width:100%;
+	height:40px;
+	border-radius:5px;
+	border:0px solid #373B46;
+	padding-left:10px;
+	float:left;
+}
+#sign_up_bottom_footer:link, #sign_up_bottom_footer:visited{
+	width:25%;
+	height:33px;
+	float:right;
+	border-radius:5px;
+	margin-right:-30%;
+	background-color:#E64D43;
+	font-family:sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#ffffff;
+	margin-top:-1%;
+	padding-top:10px;
+	text-align:center;
+	text-decoration:none;
+}
+#sign_up_bottom_text:link,#sign_up_bottom_text:visited{
+	margin-top:7px;
+}
+#social_media_div_footer{
+	width:70%;
+	height:80px;
+	float:left;
+	border:0px solid green;
+	margin-top:30px;
+	margin-left:4%;
+}
+#social_media_photo_div:link, #social_media_photo_div:visited{
+	width:20%;
+	height:40px;
+	float:left;
+	border:0px solid blue;
+	background-color:#000000;
+	margin-left:2%;
+}
+#social_media_photo_div:hover, #social_media_photo_div:active{
+	background-color:#E64D43;
+}
+#social_media_image_size{
+	width:90%;
+	height:40px;
+	margin-left:4%;
+}
+#footer_bottom{
+	width:100%;
+	height:70px;
+	float:left;
+	border:0px solid blue;
+	background-color:#2d2e49;
+}
+#footer_for_text{
+	width:99%;
+	height:20px;
+	float:left;
+	border:0px solid blue;	
+	margin-left:0%;
+	margin-top:25px;
+	
+}
+#footer_text_copyright{
+	font-family:Helvetica;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	
+}
+
+
+}
